@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Daily Jobs Digest</title>
+<style>
+  :root {
+    --bg: #f6f8f7; --card: #ffffff; --ink: #1e2a26; --muted: #64756e;
+    --accent: #1a7f5a; --accent-soft: #e3f2ec; --border: #dde5e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141a18; --card:#1d2522; --ink:#e6edea; --muted:#93a39c;
+            --accent:#4cc399; --accent-soft:#1e3a30; --border:#2c3733; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { padding:24px 20px 12px; max-width:1200px; margin:0 auto; }
+  h1 { margin:0 0 4px; font-size:22px; }
+  .sub { color:var(--muted); font-size:13px; }
+  main { max-width:1200px; margin:0 auto; padding:0 20px 60px; }
+  .controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:16px 0; }
+  select, .btn {
+    font:inherit; padding:8px 14px; border-radius:8px; border:1px solid var(--border);
+    background:var(--card); color:var(--ink); cursor:pointer; text-decoration:none;
+  }
+  .btn-primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }
+  .warn { background:#fff4e0; border:1px solid #e8c98a; color:#7a5b17;
+          padding:10px 14px; border-radius:8px; margin:10px 0; font-size:13px; }
+  @media (prefers-color-scheme: dark) { .warn { background:#3a2f16; border-color:#6b571f; color:#e8c98a; } }
+  .tabs { display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0; }
+  .tab { padding:8px 14px; border-radius:8px 8px 0 0; border:1px solid var(--border);
+         border-bottom:none; background:transparent; color:var(--muted); cursor:pointer; font:inherit; }
+  .tab.active { background:var(--card); color:var(--ink); font-weight:600; }
+  .tab .count { display:inline-block; margin-left:6px; padding:1px 8px; border-radius:10px;
+                background:var(--accent-soft); color:var(--accent); font-size:12px; font-weight:600; }
+  .panel { background:var(--card); border:1px solid var(--border); border-radius:0 10px 10px 10px; overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:820px; }
+  th, td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--border);
+           vertical-align:top; font-size:14px; }
+  th { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em;
+       position:sticky; top:0; background:var(--card); }
+  td a { color:var(--accent); font-weight:600; text-decoration:none; }
+  td a:hover { text-decoration:underline; }
+  .empty { padding:40px; text-align:center; color:var(--muted); }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Daily Jobs Digest</h1>
+  <div class="sub">New postings from Conservation Job Board, Green Jobs, Idealist, and NAFSN — one day per sheet.</div>
+</header>
+<main>
+  <div class="controls">
+    <label for="day" class="muted">Day:</label>
+    <select id="day"></select>
+    <a id="xlsx" class="btn btn-primary" download>&#8681; Download Excel</a>
+    <span id="meta" class="muted" style="font-size:13px"></span>
+  </div>
+  <div id="alerts"></div>
+  <div class="tabs" id="tabs"></div>
+  <div class="panel"><div id="content" class="empty">Loading…</div></div>
+</main>
+<script>
+const $ = (s) => document.querySelector(s);
+let INDEX = null, DAY = null, ACTIVE = null;
+
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function boot() {
+  INDEX = await (await fetch('data/index.json', { cache: 'no-store' })).json();
+  const sel = $('#day');
+  sel.innerHTML = INDEX.days.map((d) =>
+    `<option value="${d.date}">${d.date} (${d.total})</option>`).join('');
+  sel.onchange = () => loadDay(sel.value);
+
+  if (INDEX.lastRun) {
+    const bad = Object.entries(INDEX.lastRun.sources || {}).filter(([, s]) => !s.ok);
+    $('#meta').textContent = `Last updated ${new Date(INDEX.lastRun.at).toLocaleString()}`;
+    if (bad.length) {
+      $('#alerts').innerHTML = `<div class="warn">⚠ Last run couldn't reach: ${
+        bad.map(([k]) => esc(INDEX.sources[k] || k)).join(', ')
+      }. Those tabs may be incomplete for the latest day.</div>`;
+    }
+  }
+  if (INDEX.days.length) loadDay(INDEX.days[0].date);
+  else $('#content').innerHTML = '<div class="empty">No data yet — first run pending.</div>';
+}
+
+async function loadDay(date) {
+  $('#day').value = date;
+  $('#xlsx').href = `xlsx/jobs-${date}.xlsx`;
+  DAY = await (await fetch(`data/${date}.json`, { cache: 'no-store' })).json();
+  const counts = {};
+  for (const k of Object.keys(INDEX.sources)) counts[k] = 0;
+  for (const p of DAY.postings) counts[p.source] = (counts[p.source] || 0) + 1;
+
+  $('#tabs').innerHTML = Object.entries(INDEX.sources).map(([k, label]) =>
+    `<button class="tab" data-k="${k}">${esc(label)}<span class="count">${counts[k]}</span></button>`
+  ).join('');
+  document.querySelectorAll('.tab').forEach((b) => (b.onclick = () => render(b.dataset.k)));
+
+  const first = Object.keys(INDEX.sources).find((k) => counts[k] > 0) || Object.keys(INDEX.sources)[0];
+  render(ACTIVE && counts[ACTIVE] > 0 ? ACTIVE : first);
+}
+
+function render(key) {
+  ACTIVE = key;
+  document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b.dataset.k === key));
+  const rows = DAY.postings.filter((p) => p.source === key);
+  if (!rows.length) {
+    $('#content').innerHTML = '<div class="empty">No postings from this source on this day.</div>';
+    return;
+  }
+  $('#content').innerHTML = `<table><thead><tr>
+      <th>Title</th><th>Organization</th><th>Location</th><th>Type</th><th>Salary</th><th>Category</th>
+    </tr></thead><tbody>${rows.map((p) => `<tr>
+      <td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></td>
+      <td>${esc(p.org)}</td><td>${esc(p.location)}</td><td>${esc(p.jobType)}</td>
+      <td>${esc(p.salary)}</td><td>${esc(p.category)}</td>
+    </tr>`).join('')}</tbody></table>`;
+}
+boot().catch((e) => { $('#content').innerHTML = `<div class="empty">Failed to load: ${esc(e.message)}</div>`; });
+</script>
+</body>
+</html>

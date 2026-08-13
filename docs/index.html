@@ -118,7 +118,9 @@ function render(key) {
   $('#content').innerHTML = `<table><thead><tr>
       <th>Title</th><th>Organization</th><th>Location</th><th>Type</th><th>Salary</th><th>Category</th>
     </tr></thead><tbody>${rows.map((p) => `<tr>
-      <td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></td>
+      <td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>${
+        p.alsoOn ? `<div class="muted" style="font-size:12px">↔ also on ${esc(p.alsoOn)}</div>` : ''
+      }</td>
       <td>${esc(p.org)}</td><td>${esc(p.location)}</td><td>${esc(p.jobType)}</td>
       <td>${esc(p.salary)}</td><td>${esc(p.category)}</td>
     </tr>`).join('')}</tbody></table>`;

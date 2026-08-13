@@ -12,6 +12,7 @@ const COLUMNS = [
   { header: 'Job Type', key: 'jobType', width: 16 },
   { header: 'Salary', key: 'salary', width: 24 },
   { header: 'Category', key: 'category', width: 30 },
+  { header: 'Also On', key: 'alsoOn', width: 24 },
   { header: 'Link', key: 'url', width: 60 },
 ];
 
@@ -24,7 +25,7 @@ export async function writeXlsxForDate(date) {
     const ws = wb.addWorksheet(label);
     ws.columns = COLUMNS;
     ws.getRow(1).font = { bold: true };
-    ws.autoFilter = { from: 'A1', to: 'G1' };
+    ws.autoFilter = { from: 'A1', to: 'H1' };
     ws.views = [{ state: 'frozen', ySplit: 1 }];
 
     for (const p of day.postings.filter((p) => p.source === key)) {

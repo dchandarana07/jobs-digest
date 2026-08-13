@@ -450,7 +450,8 @@
       "jobType": "Full-Time",
       "salary": "",
       "category": "Utilities",
-      "url": "https://greenjobs.greenjobsearch.org/jobs/research-manager-3/"
+      "url": "https://greenjobs.greenjobsearch.org/jobs/research-manager-3/",
+      "alsoOn": "Idealist"
     },
     {
       "source": "idealist",
@@ -1137,6 +1138,17 @@
     {
       "source": "idealist",
       "date": "2026-08-13",
+      "title": "Immigration Justice Project - Senior Paralegal",
+      "org": "American Bar Association",
+      "location": "San Diego, California",
+      "jobType": "Full Time",
+      "salary": "",
+      "category": "Human Rights Civil Liberties, Legal Assistance, Immigrants Or Refugees",
+      "url": "https://www.idealist.org/en/nonprofit-job/2be19db5c0ec4541a9dc53c9a34e2bf3-immigration-justice-project-senior-paralegal-american-bar-association-san-diego"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-08-13",
       "title": "Instructional Consultant - Math (K–12; Part-Time)",
       "org": "Ideal Instruction",
       "location": "New York, New York",
@@ -1528,7 +1540,8 @@
       "jobType": "Contract",
       "salary": "USD 95000.00 - 105000.00/year",
       "category": "Climate Change, Energy, Environment",
-      "url": "https://www.idealist.org/en/nonprofit-job/e95f80bded0a4b73ac0597babe4e8899-research-manager-energy-and-policy-institute-san-francisco"
+      "url": "https://www.idealist.org/en/nonprofit-job/e95f80bded0a4b73ac0597babe4e8899-research-manager-energy-and-policy-institute-san-francisco",
+      "alsoOn": "Green Jobs"
     },
     {
       "source": "idealist",

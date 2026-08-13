@@ -21,6 +21,41 @@ function dayPath(date) {
   return path.join(DATA_DIR, `${date}.json`);
 }
 
+// Same title + org appearing on more than one board on the same day is almost
+// certainly the same posting cross-posted. We keep every copy (so each source
+// tab stays complete) but flag the duplicates so readers can skip them.
+function crossPostKey(p) {
+  const norm = (s) =>
+    String(s || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+  const title = norm(p.title);
+  const org = norm(p.org);
+  return title && org ? `${title}|${org}` : null;
+}
+
+function markCrossPosts(day) {
+  const groups = new Map();
+  for (const p of day.postings) {
+    delete p.alsoOn;
+    const key = crossPostKey(p);
+    if (!key) continue;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(p);
+  }
+  for (const group of groups.values()) {
+    const sources = [...new Set(group.map((p) => p.source))];
+    if (sources.length < 2) continue;
+    for (const p of group) {
+      p.alsoOn = sources
+        .filter((s) => s !== p.source)
+        .map((s) => SOURCES[s])
+        .join(', ');
+    }
+  }
+}
+
 export function loadDay(date) {
   try {
     return JSON.parse(fs.readFileSync(dayPath(date), 'utf8'));
@@ -50,6 +85,7 @@ export function upsertPostings(allPostings) {
     }
     if (added > 0) {
       day.postings.sort((a, b) => a.source.localeCompare(b.source) || a.title.localeCompare(b.title));
+      markCrossPosts(day);
       fs.mkdirSync(DATA_DIR, { recursive: true });
       fs.writeFileSync(dayPath(date), JSON.stringify(day, null, 2));
       changedDates.push({ date, added, total: day.postings.length });

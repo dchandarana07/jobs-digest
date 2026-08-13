@@ -42,3 +42,17 @@ jobs:
             git pull --rebase origin main
             git push origin main
           fi
+
+      # Data is already committed above; this step only makes the run show red
+      # (and email the repo owner) when one of the four scrapers broke.
+      - name: Fail loud if any source failed
+        run: |
+          node -e '
+            const s = JSON.parse(require("fs").readFileSync("docs/status.json", "utf8"));
+            const bad = Object.entries(s.sources).filter(([, v]) => !v.ok);
+            if (bad.length) {
+              console.error("Broken sources:", bad.map(([k, v]) => `${k}: ${v.error}`).join(" | "));
+              process.exit(1);
+            }
+            console.log("All sources OK.");
+          '

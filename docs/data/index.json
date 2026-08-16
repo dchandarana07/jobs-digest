@@ -1,6 +1,6 @@
 {
   "lastRun": {
-    "at": "2026-08-15T15:28:25.464Z",
+    "at": "2026-08-16T03:51:20.263Z",
     "runDate": "2026-08-15",
     "sources": {
       "cjb": {
@@ -13,7 +13,7 @@
       },
       "idealist": {
         "ok": true,
-        "found": 109
+        "found": 112
       },
       "nafsn": {
         "ok": true,
@@ -30,11 +30,11 @@
   "days": [
     {
       "date": "2026-08-15",
-      "total": 5,
+      "total": 8,
       "counts": {
         "cjb": 0,
         "greenjobs": 0,
-        "idealist": 5,
+        "idealist": 8,
         "nafsn": 0
       }
     },

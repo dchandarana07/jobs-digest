@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-18T15:39:04.200Z",
+  "at": "2026-08-19T03:50:16.540Z",
   "runDate": "2026-08-18",
   "sources": {
     "cjb": {
@@ -8,15 +8,15 @@
     },
     "greenjobs": {
       "ok": true,
-      "found": 2
+      "found": 4
     },
     "idealist": {
       "ok": true,
-      "found": 198
+      "found": 308
     },
     "nafsn": {
       "ok": true,
-      "found": 0
+      "found": 52
     }
   }
 }

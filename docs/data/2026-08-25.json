@@ -702,6 +702,17 @@
     {
       "source": "idealist",
       "date": "2026-08-25",
+      "title": "Communications Manager",
+      "org": "Carolina for Kibera, INC.",
+      "location": "Chapel Hill, NC",
+      "jobType": "Full Time",
+      "salary": "USD 70000.00 - 85000.00/year",
+      "category": "Children Youth, Community Development, Economic Development",
+      "url": "https://www.idealist.org/en/nonprofit-job/28358e4ec7c9473a96f43a5eeeb2e76d-communications-manager-carolina-for-kibera-inc-chapel-hill"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-08-25",
       "title": "Community Canvasser",
       "org": "New Yorkers United for Child Care",
       "location": "Remote (New York)",
@@ -2124,6 +2135,17 @@
     {
       "source": "nafsn",
       "date": "2026-08-25",
+      "title": "EXECUTIVE DIRECTOR",
+      "org": "Tilth Alliance",
+      "location": "Seattle, Washington",
+      "jobType": "",
+      "salary": "",
+      "category": "Executive Director",
+      "url": "https://members.foodsystemsnetwork.org/classifieds/moreinfo.php?cid=72617029"
+    },
+    {
+      "source": "nafsn",
+      "date": "2026-08-25",
       "title": "EXTENSION EDUCATOR",
       "org": "4-H YOUTH DEVELOPMENT - STEAM AG - University of Illinois Extension",
       "location": "Bourbonnais, Illinois",
@@ -2322,6 +2344,28 @@
     {
       "source": "nafsn",
       "date": "2026-08-25",
+      "title": "POST DOCTORAL ASSOCIATE",
+      "org": "RURAL ECONOMIC RESILIENCE AND FOOD SYSTEMS - University of Vermont",
+      "location": "Burlington, Vermont",
+      "jobType": "",
+      "salary": "",
+      "category": "Research",
+      "url": "https://members.foodsystemsnetwork.org/classifieds/moreinfo.php?cid=72615807"
+    },
+    {
+      "source": "nafsn",
+      "date": "2026-08-25",
+      "title": "PRESIDENT AND CEO",
+      "org": "Farm Foundation",
+      "location": "Chicagoland or Remote, Illinois",
+      "jobType": "",
+      "salary": "",
+      "category": "Executive Director",
+      "url": "https://members.foodsystemsnetwork.org/classifieds/moreinfo.php?cid=72618251"
+    },
+    {
+      "source": "nafsn",
+      "date": "2026-08-25",
       "title": "PROGRAM OFFICER",
       "org": "Albertsons Companies Foundation",
       "location": "Pleasanton, California",
@@ -2406,6 +2450,17 @@
       "salary": "",
       "category": "Program Operations",
       "url": "https://members.foodsystemsnetwork.org/classifieds/moreinfo.php?cid=72602365"
+    },
+    {
+      "source": "nafsn",
+      "date": "2026-08-25",
+      "title": "URBAN GARDENER",
+      "org": "Love and Carrots",
+      "location": "Across DC, MD, and VA, Washington DC",
+      "jobType": "",
+      "salary": "",
+      "category": "Program Operations",
+      "url": "https://members.foodsystemsnetwork.org/classifieds/moreinfo.php?cid=72614585"
     }
   ]
 }

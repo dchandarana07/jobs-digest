@@ -1,6 +1,6 @@
 {
-  "at": "2026-08-30T18:32:46.242Z",
-  "runDate": "2026-08-30",
+  "at": "2026-08-31T09:30:35.094Z",
+  "runDate": "2026-08-31",
   "sources": {
     "cjb": {
       "ok": true,
@@ -12,7 +12,7 @@
     },
     "idealist": {
       "ok": true,
-      "found": 9
+      "found": 2
     },
     "nafsn": {
       "ok": true,

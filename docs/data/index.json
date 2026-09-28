@@ -1,7 +1,7 @@
 {
   "lastRun": {
-    "at": "2026-09-27T18:57:35.223Z",
-    "runDate": "2026-09-27",
+    "at": "2026-09-28T09:31:58.809Z",
+    "runDate": "2026-09-28",
     "sources": {
       "cjb": {
         "ok": true,
@@ -30,11 +30,11 @@
   "days": [
     {
       "date": "2026-09-27",
-      "total": 2,
+      "total": 8,
       "counts": {
         "cjb": 0,
         "greenjobs": 0,
-        "idealist": 2,
+        "idealist": 8,
         "nafsn": 0
       }
     },

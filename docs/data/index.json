@@ -1,19 +1,19 @@
 {
   "lastRun": {
-    "at": "2026-10-16T07:59:38.474Z",
+    "at": "2026-10-16T18:44:08.232Z",
     "runDate": "2026-10-16",
     "sources": {
       "cjb": {
         "ok": true,
-        "found": 33
+        "found": 75
       },
       "greenjobs": {
         "ok": true,
-        "found": 1
+        "found": 2
       },
       "idealist": {
         "ok": true,
-        "found": 147
+        "found": 219
       },
       "nafsn": {
         "ok": true,
@@ -28,6 +28,16 @@
     "nafsn": "NAFSN"
   },
   "days": [
+    {
+      "date": "2026-10-16",
+      "total": 115,
+      "counts": {
+        "cjb": 42,
+        "greenjobs": 1,
+        "idealist": 72,
+        "nafsn": 0
+      }
+    },
     {
       "date": "2026-10-15",
       "total": 197,

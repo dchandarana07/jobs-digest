@@ -241,7 +241,8 @@
       "jobType": "AmeriCorps",
       "salary": "$2,880 per month",
       "category": "admin-leadership-general-stewardship",
-      "url": "https://www.conservationjobboard.com/job-listing-field-support-technician-all-programs-bozeman-montana/4330582436"
+      "url": "https://www.conservationjobboard.com/job-listing-field-support-technician-all-programs-bozeman-montana/4330582436",
+      "alsoOn": "Green Jobs"
     },
     {
       "source": "cjb",
@@ -466,6 +467,29 @@
     {
       "source": "greenjobs",
       "date": "2026-10-20",
+      "title": "Field Organizer",
+      "org": "Sierra Watch",
+      "location": "Truckee, California, United States",
+      "jobType": "Full-Time",
+      "salary": "60,000 - 80,000",
+      "category": "Conservation",
+      "url": "https://greenjobs.greenjobsearch.org/jobs/field-organizer-3/"
+    },
+    {
+      "source": "greenjobs",
+      "date": "2026-10-20",
+      "title": "Field Support Technician (ALL Programs)",
+      "org": "Montana Conservation Corps",
+      "location": "Montana, United States, United States",
+      "jobType": "Full-Time",
+      "salary": "Less than 20,000",
+      "category": "Conservation",
+      "url": "https://greenjobs.greenjobsearch.org/jobs/field-support-technician-all-programs/",
+      "alsoOn": "Conservation Job Board"
+    },
+    {
+      "source": "greenjobs",
+      "date": "2026-10-20",
       "title": "Technical Services Manager",
       "org": "Sequoia Ecological Consulting",
       "location": "California, United States, United States",
@@ -473,6 +497,17 @@
       "salary": "100,000 and above",
       "category": "Conservation",
       "url": "https://greenjobs.greenjobsearch.org/jobs/technical-services-manager/"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Academic Advisement Assistant/College Assistant",
+      "org": "CUNY School of Professional Studies",
+      "location": "New York, New York",
+      "jobType": "Part Time, Temporary",
+      "salary": "",
+      "category": "Education",
+      "url": "https://www.idealist.org/en/nonprofit-job/8f28f2fef9554b659cceab08d2a087dc-academic-advisement-assistantcollege-assistant-cuny-school-of-professional-studies-new-york"
     },
     {
       "source": "idealist",
@@ -499,6 +534,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Administrative Specialist",
+      "org": "NewBridges Immigrant Resource Center",
+      "location": "Harrisonburg, Virginia",
+      "jobType": "Part Time",
+      "salary": "USD 20.00 - 23.00/hour",
+      "category": "Immigrants Or Refugees",
+      "url": "https://www.idealist.org/en/nonprofit-job/8861638aa37b4340824fa7c2e427899a-administrative-specialist-newbridges-immigrant-resource-center-harrisonburg"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Administrative Specialist - Personnel and Human Resources",
       "org": "The Salvation Army National Headquarters",
       "location": "Alexandria, Virginia",
@@ -517,6 +563,17 @@
       "salary": "USD 32000.00 - 32000.00/year",
       "category": "Arts Music, Community Development, Education",
       "url": "https://www.idealist.org/en/nonprofit-job/df2a265b80bf4ac78d31d28c9f1a14ca-advancement-assistant-richmond-symphony-richmond"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Advancement Officer",
+      "org": "Youth Enrichment Services (YES)",
+      "location": "Boston, Massachusetts",
+      "jobType": "Part Time",
+      "salary": "",
+      "category": "Children Youth, Sports Recreation",
+      "url": "https://www.idealist.org/en/nonprofit-job/cdb8141e93484e7ab3246b46e1654f26-advancement-officer-youth-enrichment-services-yes-boston"
     },
     {
       "source": "idealist",
@@ -598,6 +655,28 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Chief Executive Officer (CEO)",
+      "org": "MaxAbilities of York County",
+      "location": "York, South Carolina",
+      "jobType": "Full Time",
+      "salary": "USD 127000.00 - 159000.00/year",
+      "category": "Disability",
+      "url": "https://www.idealist.org/en/nonprofit-job/5835f4c3aa9e4e8d953d67ca8a13db87-chief-executive-officer-ceo-maxabilities-of-york-county-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Chief Executive Officer & Executive Producer",
+      "org": "Gay Men's Chorus of Los Angeles",
+      "location": "Los Angeles, California",
+      "jobType": "Full Time",
+      "salary": "USD 140000.00 - 180000.00/year",
+      "category": "Arts Music, Children Youth, Human Rights Civil Liberties",
+      "url": "https://www.idealist.org/en/nonprofit-job/ff15a27e39764692a6a5882e7d41e95b-chief-executive-officer-executive-producer-gay-mens-chorus-of-los-angeles-los-angeles"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Clinical Nurse Manager",
       "org": "Iona Senior Services",
       "location": "Washington, District of Columbia",
@@ -653,6 +732,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Community Engagement Associate - Mandarin",
+      "org": "NYC Kids RISE",
+      "location": "Long Island City, New York",
+      "jobType": "Full Time",
+      "salary": "USD 75000.00 - 75000.00/year",
+      "category": "Children Youth, Community Development, Economic Development",
+      "url": "https://www.idealist.org/en/nonprofit-job/85b3eb53122344a89e32e0884dea599a-community-engagement-associate-mandarin-nyc-kids-rise-long-island-city"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Community Engagement Coordinator (Part-Time, Yonkers Outreach)",
       "org": "Environmental Leaders of Color",
       "location": "Yonkers, New York",
@@ -697,6 +787,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Deputy Director of Advancement",
+      "org": "Cayton Children's Museum",
+      "location": "Los Angeles, California",
+      "jobType": "Part Time",
+      "salary": "USD 55.00 - 65.00/hour",
+      "category": "Arts Music, Children Youth",
+      "url": "https://www.idealist.org/en/nonprofit-job/42b59e5b8e144fdc9dc7587d971302ed-deputy-director-of-advancement-cayton-childrens-museum-los-angeles"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Development and Operations Associate",
       "org": "Tookany/Tacony-Frankford Watershed Partnership, Inc.",
       "location": "Philadelphia, Pennsylvania",
@@ -704,6 +805,39 @@
       "salary": "USD 50000.00 - 55000.00/year",
       "category": "Environment, Civic Engagement",
       "url": "https://www.idealist.org/en/nonprofit-job/2467caf419c54a5da9fc0660302b07a1-development-and-operations-associate-tookanytacony-frankford-watershed-partnership-inc-philadelphia"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Development Assistant-Midwest Region",
+      "org": "American Friends of The Hebrew University",
+      "location": "New York, NY",
+      "jobType": "Full Time",
+      "salary": "USD 60000.00 - 70000.00/year",
+      "category": "Education, Philanthropy",
+      "url": "https://www.idealist.org/en/nonprofit-job/caaa01576da04fedbe0cfe5bf5227bd9-development-assistant-midwest-region-american-friends-of-the-hebrew-university-new-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Development Associate",
+      "org": "National Alliance on Mental Illness of New York City (NAMI-NYC Metro)",
+      "location": "New York, New York",
+      "jobType": "Full Time",
+      "salary": "USD 50000.00 - 60000.00/year",
+      "category": "Human Rights Civil Liberties, Mental Health",
+      "url": "https://www.idealist.org/en/nonprofit-job/830b1fa9cd1a4eccb681e17c3ef97e0c-development-associate-national-alliance-on-mental-illness-of-new-york-city-nami-nyc-metro-new-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Development Associate",
+      "org": "Carnegie Endowment for International Peace",
+      "location": "Washington, DC",
+      "jobType": "Full Time",
+      "salary": "USD 65000.00 - 75000.00/year",
+      "category": "International Relations, Policy",
+      "url": "https://www.idealist.org/en/nonprofit-job/77fb5b326be54b37b07db1d5baa754fc-development-associate-carnegie-endowment-for-international-peace-washington"
     },
     {
       "source": "idealist",
@@ -752,6 +886,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Development Manager",
+      "org": "Cystic Fibrosis Foundation - Cff.org",
+      "location": "Denver, Colorado",
+      "jobType": "Full Time",
+      "salary": "",
+      "category": "Health Medicine, Science Technology",
+      "url": "https://www.idealist.org/en/nonprofit-job/4edee90772d9466a9610f0bb7c0ec3e5-development-manager-cystic-fibrosis-foundation-cfforg-denver"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Digital Media Engineer",
       "org": "Trinity Church NYC",
       "location": "New York, New York",
@@ -785,6 +930,28 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Director of Individual Giving",
+      "org": "Open Door Legal",
+      "location": "San Francisco, California",
+      "jobType": "Full Time",
+      "salary": "USD 125500.00 - 141500.00/year",
+      "category": "",
+      "url": "https://www.idealist.org/en/nonprofit-job/47ec2d2a72e143c685610369e86e0740-director-of-individual-giving-open-door-legal-san-francisco"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Director of Individual Giving",
+      "org": "Caramoor Center for Music and the Arts, Inc.",
+      "location": "Katonah, New York",
+      "jobType": "Full Time",
+      "salary": "USD 85000.00 - 100000.00/year",
+      "category": "Arts Music, Children Youth, Education",
+      "url": "https://www.idealist.org/en/nonprofit-job/afaaaf010449484b9377e802df67e624-director-of-individual-giving-caramoor-center-for-music-and-the-arts-inc-katonah"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "DIRECTOR OF LEGAL SERVICES",
       "org": "Catholic Migration Services",
       "location": "Remote (Queens County, New York)",
@@ -814,6 +981,28 @@
       "salary": "USD 120676.00 - 134084.00/year",
       "category": "",
       "url": "https://www.idealist.org/en/nonprofit-job/4b153a563ef04452ae3dca3ed16cbfd5-director-of-political-affairs-american-speech-language-hearing-association-rockville"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Director of Strategic Revenue & Growth",
+      "org": "People's Light & Theatre",
+      "location": "Malvern, Pennsylvania",
+      "jobType": "Full Time",
+      "salary": "USD 100000.00/year",
+      "category": "Arts Music",
+      "url": "https://www.idealist.org/en/nonprofit-job/dadafae234f3438ea1b27ef616903073-director-of-strategic-revenue-growth-peoples-light-theatre-malvern"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Director, School Partnership & Coaching Western Washington",
+      "org": "College Success Foundation",
+      "location": "Bellevue, Washington",
+      "jobType": "Full Time",
+      "salary": "USD 114698.00 - 172042.00/year",
+      "category": "Children Youth, Education, Philanthropy",
+      "url": "https://www.idealist.org/en/nonprofit-job/cd063be59d294c63b873f5ba68e7c225-director-school-partnership-coaching-western-washington-college-success-foundation-bellevue"
     },
     {
       "source": "idealist",
@@ -895,6 +1084,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Evaluation & Data Specialist",
+      "org": "Respect Together",
+      "location": "Harrisburg, Pennsylvania",
+      "jobType": "Full Time",
+      "salary": "USD 50000.00 - 55286.00/year",
+      "category": "Health Medicine, Human Rights Civil Liberties",
+      "url": "https://www.idealist.org/en/nonprofit-job/404bafdc2a4a4b6a938eb91cceea66c4-evaluation-data-specialist-respect-together-harrisburg"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Executive Assistant to the Director & CEO",
       "org": "The Newark Museum of Art",
       "location": "Newark, New Jersey",
@@ -902,6 +1102,17 @@
       "salary": "USD 65000.00 - 75000.00/year",
       "category": "Arts Music, Community Development, Education",
       "url": "https://www.idealist.org/en/nonprofit-job/7bdbe7c7161c44ba85a947e34f7fb5be-executive-assistant-to-the-director-ceo-the-newark-museum-of-art-newark"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Executive Director",
+      "org": "The Climate Center",
+      "location": "Sacramento, California",
+      "jobType": "Full Time",
+      "salary": "",
+      "category": "Policy, Civic Engagement, Education",
+      "url": "https://www.idealist.org/en/nonprofit-job/6c039b66aa47455f8e59077401a8f003-executive-director-the-climate-center-sacramento"
     },
     {
       "source": "idealist",
@@ -924,6 +1135,17 @@
       "salary": "",
       "category": "Agriculture, Poverty, Rural Areas",
       "url": "https://www.idealist.org/en/nonprofit-job/b06be3f8674847ec9a5eaf6b5522cd1b-executive-transformation-and-strategy-officer-heifer-international-little-rock"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "File Clerk",
+      "org": "Brooklyn Defender Services",
+      "location": "Forest Hills, NY",
+      "jobType": "Full Time",
+      "salary": "USD 69000.00 - 74000.00/year",
+      "category": "Family, Immigrants Or Refugees, Legal Assistance",
+      "url": "https://www.idealist.org/en/nonprofit-job/6c263333bd2a4141bd7de1767cae156b-file-clerk-brooklyn-defender-services-forest-hills"
     },
     {
       "source": "idealist",
@@ -983,6 +1205,28 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Job Title: Fundraiser / Development Specialist",
+      "org": "New Day Community Development Corporation",
+      "location": "Rye Brook, New York",
+      "jobType": "Full Time",
+      "salary": "USD 4000.00/month",
+      "category": "Community Development, Education, Job Workplace",
+      "url": "https://www.idealist.org/en/nonprofit-job/34de3ea84ea64d2bbf85572468a35407-job-title-fundraiser-development-specialist-new-day-community-development-corporation-rye-brook"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Leave and Accommodations Administrator",
+      "org": "Animal Care Centers of NYC",
+      "location": "New York, New York",
+      "jobType": "Full Time",
+      "salary": "USD 70000.00 - 70000.00/year",
+      "category": "Animals",
+      "url": "https://www.idealist.org/en/nonprofit-job/1bcf2299edcc44f0be815bd508e6c200-leave-and-accommodations-administrator-animal-care-centers-of-nyc-new-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Legal Assistant/Screener",
       "org": "Pisgah Legal Services",
       "location": "Asheville, North Carolina",
@@ -994,6 +1238,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Litigation and Economic Justice Triage Attorney",
+      "org": "Open Door Legal",
+      "location": "San Francisco, California",
+      "jobType": "Full Time",
+      "salary": "USD 83500.00 - 99500.00/year",
+      "category": "",
+      "url": "https://www.idealist.org/en/nonprofit-job/c790fcabad98493d9099c29642625356-litigation-and-economic-justice-triage-attorney-open-door-legal-san-francisco"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Major Gifts Officer",
       "org": "Village Health Works",
       "location": "New York, NY",
@@ -1001,6 +1256,17 @@
       "salary": "USD 80000.00 - 90000.00/year",
       "category": "Community Development, Economic Development, Education",
       "url": "https://www.idealist.org/en/nonprofit-job/6afc56df11c54e3783497959fb10bdf0-major-gifts-officer-village-health-works-new-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Major Gifts Officer",
+      "org": "Providence Public Library",
+      "location": "Providence, RI",
+      "jobType": "Full Time",
+      "salary": "USD 90000.00 - 110000.00/year",
+      "category": "Philanthropy",
+      "url": "https://www.idealist.org/en/nonprofit-job/90ff96f0241f4002af61345727606c0d-major-gifts-officer-providence-public-library-providence"
     },
     {
       "source": "idealist",
@@ -1038,6 +1304,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Marketing & Communications Manager",
+      "org": "Unravel",
+      "location": "Remote",
+      "jobType": "Full Time",
+      "salary": "USD 45000.00/year",
+      "category": "Children Youth, Family, Health Medicine",
+      "url": "https://www.idealist.org/en/nonprofit-job/f4d772bab1bb4f4a9833b0df65da8945-marketing-communications-manager-unravel-gilroy"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Membership Assistant",
       "org": "Maryland State Education Association",
       "location": "Annapolis, Maryland",
@@ -1060,6 +1337,39 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Mitigation Specialist, Criminal Trials Staten Island",
+      "org": "The Legal Aid Society - New York City",
+      "location": "New York, New York",
+      "jobType": "Full Time",
+      "salary": "USD 83631.00 - 125627.00/year",
+      "category": "Legal Assistance, Conflict Resolution",
+      "url": "https://www.idealist.org/en/nonprofit-job/468663ae90f84722be3f684cb3ac18ba-mitigation-specialist-criminal-trials-staten-island-the-legal-aid-society-new-york-city-new-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Mitigation Specialist, Exploitation Intervention Project",
+      "org": "The Legal Aid Society - New York City",
+      "location": "New York, New York",
+      "jobType": "Full Time",
+      "salary": "USD 83631.00 - 125627.00/year",
+      "category": "Legal Assistance, Immigrants Or Refugees",
+      "url": "https://www.idealist.org/en/nonprofit-job/78e6d994fd8e45c3bda4019d0b7b584e-mitigation-specialist-exploitation-intervention-project-the-legal-aid-society-new-york-city-new-york"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "New York State School Food Operations Specialist",
+      "org": "Chef Ann Foundation",
+      "location": "Remote (New York)",
+      "jobType": "Full Time",
+      "salary": "USD 66027.00 - 89215.00/year",
+      "category": "",
+      "url": "https://www.idealist.org/en/job/4f67d0e2311743a7a0169b52a43c9682-new-york-state-school-food-operations-specialist-chef-ann-foundation-monticello"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Nutrition Program Manager",
       "org": "Iona Senior Services",
       "location": "Washington, District of Columbia",
@@ -1071,6 +1381,17 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Organizing Director",
+      "org": "Student Immigrant Movement",
+      "location": "Boston, Massachusetts",
+      "jobType": "Full Time",
+      "salary": "USD 85000.00 - 85000.00/year",
+      "category": "Children Youth, Civic Engagement, Education",
+      "url": "https://www.idealist.org/en/nonprofit-job/a6ba65d728044d85b777a8bd6d807e4e-organizing-director-student-immigrant-movement-boston"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Part-time Accountant",
       "org": "LEV FOUNDATION",
       "location": "Remote (Washington)",
@@ -1078,6 +1399,28 @@
       "salary": "USD 55000.00 - 60000.00/year",
       "category": "Education, Children Youth",
       "url": "https://www.idealist.org/en/nonprofit-job/1e2a2c6acaf548d980177c79cccd3eb5-part-time-accountant-lev-foundation-seattle"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "People, Finance and Operations Manager",
+      "org": "Forward Together",
+      "location": "Remote",
+      "jobType": "Full Time",
+      "salary": "USD 81807.00 - 87387.00/year",
+      "category": "Reproductive Health Rights",
+      "url": "https://www.idealist.org/en/nonprofit-job/ef3a17dabf884aaa9a5a85577848660e-people-finance-and-operations-manager-forward-together-oakland"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Philanthropy Officer",
+      "org": "Food & Friends",
+      "location": "Washington, DC",
+      "jobType": "Full Time",
+      "salary": "USD 100000.00 - 110000.00/year",
+      "category": "Health Medicine, Poverty",
+      "url": "https://www.idealist.org/en/nonprofit-job/fb102a67a2ea4e778432f6c416584da1-philanthropy-officer-food-friends-washington"
     },
     {
       "source": "idealist",
@@ -1126,6 +1469,39 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Program Coordinator - Therapeutic Playroom",
+      "org": "Safe & Sound",
+      "location": "San Francisco, California",
+      "jobType": "Full Time",
+      "salary": "USD 32.77/hour",
+      "category": "Children Youth, Family, Mental Health",
+      "url": "https://www.idealist.org/en/nonprofit-job/526156b4ff8c4e01b5b33584723b26f0-program-coordinator-therapeutic-playroom-safe-sound-san-francisco"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Program Evaluation + Administration Coordinator",
+      "org": "COMMUNITIES TOGETHER INC (CTI)",
+      "location": "Bethesda, Maryland",
+      "jobType": "Full Time",
+      "salary": "USD 60050.00 - 64500.00/year",
+      "category": "Children Youth, Community Development, Financial Literacy Personal Finance",
+      "url": "https://www.idealist.org/en/nonprofit-job/7f23efb8b25949f6bbf8c93ab228e7cd-program-evaluation-administration-coordinator-communities-together-inc-cti-bethesda"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Project Management Lead",
+      "org": "Coleridge Initiative",
+      "location": "Remote",
+      "jobType": "Full Time",
+      "salary": "USD 100000.00 - 115000.00/year",
+      "category": "Policy, Research Social Science, Science Technology",
+      "url": "https://www.idealist.org/en/nonprofit-job/556dc29207b147fcb2feb0842a113308-project-management-lead-coleridge-initiative-washington"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "PUBLIC DEFENDER CLIENT ADVOCATE",
       "org": "Partners for Justice",
       "location": "Chesterfield, Virginia",
@@ -1133,6 +1509,28 @@
       "salary": "USD 44000.00 - 50605.00/year",
       "category": "Crime Safety, Human Rights Civil Liberties, Legal Assistance",
       "url": "https://www.idealist.org/en/nonprofit-job/3ddd04010d7e403698a036177ebe6d5e-public-defender-client-advocate-partners-for-justice-chesterfield"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "PUBLIC DEFENDER CLIENT ADVOCATE - Chesterfield, VA on-site",
+      "org": "Partners for Justice",
+      "location": "Chesterfield, Virginia",
+      "jobType": "Full Time",
+      "salary": "USD 44000.00 - 50605.00/year",
+      "category": "Crime Safety, Human Rights Civil Liberties, Legal Assistance",
+      "url": "https://www.idealist.org/en/nonprofit-job/3ddd04010d7e403698a036177ebe6d5e-public-defender-client-advocate-chesterfield-va-on-site-partners-for-justice-chesterfield"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "PUBLIC DEFENDER CLIENT ADVOCATE - Yreka, California (on-site)",
+      "org": "Partners for Justice",
+      "location": "Yreka, California",
+      "jobType": "Full Time",
+      "salary": "USD 44000.00 - 61000.00/year",
+      "category": "Crime Safety, Human Rights Civil Liberties, Legal Assistance",
+      "url": "https://www.idealist.org/en/nonprofit-job/303eec1525454dc1a78384cde2e8f8e3-public-defender-client-advocate-yreka-california-on-site-partners-for-justice-yreka"
     },
     {
       "source": "idealist",
@@ -1192,6 +1590,28 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Senior Communications Manager",
+      "org": "Earth Island Institute",
+      "location": "Berkeley, California",
+      "jobType": "Full Time",
+      "salary": "USD 120863.00 - 120863.00/year",
+      "category": "Civic Engagement, Community Development, Environment",
+      "url": "https://www.idealist.org/en/nonprofit-job/24d3254a2cdc4d118a19115c540f41c5-senior-communications-manager-earth-island-institute-berkeley"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Senior Director of Development & Major Gifts",
+      "org": "Island Senior Resources",
+      "location": "Langley, Washington",
+      "jobType": "Full Time",
+      "salary": "USD 135000.00 - 140000.00/year",
+      "category": "Seniors Retirement",
+      "url": "https://www.idealist.org/en/job/c55ebe21ce0d4d758776daae1882e087-senior-director-of-development-major-gifts-island-senior-resources-langley"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Senior Eviction Defense (UD) Housing Attorney",
       "org": "Open Door Legal",
       "location": "San Francisco, California",
@@ -1221,6 +1641,28 @@
       "salary": "",
       "category": "",
       "url": "https://www.idealist.org/en/nonprofit-job/e0ce69030b574787b92b120f28ea2f06-senior-probate-attorney-open-door-legal-san-francisco"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Senior Product Manager",
+      "org": "Rivet Education",
+      "location": "Remote",
+      "jobType": "Full Time",
+      "salary": "USD 140000.00 - 165000.00/year",
+      "category": "Education",
+      "url": "https://www.idealist.org/en/business-job/4ee73007316a46ee9a2c3173e9792b70-senior-product-manager-rivet-education-saint-francisville"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Senior Program Manager, Government Partnerships",
+      "org": "Baby2Baby",
+      "location": "Los Angeles, California",
+      "jobType": "Contract",
+      "salary": "USD 75000.00 - 90000.00/year",
+      "category": "Children Youth",
+      "url": "https://www.idealist.org/en/nonprofit-job/43ae9a7c36f649f3b0b73be8c0987218-senior-program-manager-government-partnerships-baby2baby-los-angeles"
     },
     {
       "source": "idealist",
@@ -1265,6 +1707,17 @@
       "salary": "USD 90000.00 - 110000.00/year",
       "category": "",
       "url": "https://www.idealist.org/en/nonprofit-job/5704bf4031554c78a75bef4226c81200-special-assistant-guardrails-action-washington"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Special Assistant, Executive Office",
+      "org": "Orbis International",
+      "location": "Remote",
+      "jobType": "Full Time",
+      "salary": "USD 90000.00 - 110000.00/year",
+      "category": "",
+      "url": "https://www.idealist.org/en/nonprofit-job/0de2c3e642b14ba29c9204c24cc4064b-special-assistant-executive-office-orbis-international-new-york"
     },
     {
       "source": "idealist",
@@ -1346,6 +1799,28 @@
     {
       "source": "idealist",
       "date": "2026-10-20",
+      "title": "Supportive Housing Coordinator - Rapid Re-Housing",
+      "org": "Homeless Services Network of Central Florida",
+      "location": "Orlando, Florida",
+      "jobType": "Full Time",
+      "salary": "USD 52000.00 - 58000.00/year",
+      "category": "Housing Homelessness",
+      "url": "https://www.idealist.org/en/nonprofit-job/f5170885076f4da39f7b3cb0e30a3db9-supportive-housing-coordinator-rapid-re-housing-homeless-services-network-of-central-florida-orlando"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Teaching Artist",
+      "org": "The Shining Stars Project, Inc.",
+      "location": "Manteca, California",
+      "jobType": "Full Time",
+      "salary": "USD 23.00 - 25.00/hour",
+      "category": "Arts Music, Disability, Education",
+      "url": "https://www.idealist.org/en/nonprofit-job/4c857a35b1ff41f5b6315f51b050d326-teaching-artist-the-shining-stars-project-inc-manteca"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
       "title": "Tech Lead — Backend & Platform",
       "org": "Basta",
       "location": "Remote",
@@ -1364,6 +1839,17 @@
       "salary": "USD 97038.00 - 126024.00/year",
       "category": "Community Development, Economic Development, Health Medicine",
       "url": "https://www.idealist.org/en/nonprofit-job/685c9565cfa34a16bb9f1e189115d2eb-technical-advisor-international-business-economic-development-the-salvation-army-national-headquarters-alexandria"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Technical Services Manager",
+      "org": "Sequoia Ecological Consulting, Inc.",
+      "location": "Remote",
+      "jobType": "Full Time",
+      "salary": "USD 140000.00 - 160000.00/year",
+      "category": "Environment, Climate Change, Science Technology",
+      "url": "https://www.idealist.org/en/consultant-job/3c279a37008342d0bde415a6a1e30e09-technical-services-manager-sequoia-ecological-consulting-inc-walnut-creek"
     },
     {
       "source": "idealist",
@@ -1419,6 +1905,17 @@
       "salary": "USD 25.00/hour",
       "category": "Children Youth, Crime Safety, Men",
       "url": "https://www.idealist.org/en/nonprofit-job/d82a2ff7f2814bfaa44ba5430b5820ce-victim-services-coordinator-victim-support-services-everett"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-10-20",
+      "title": "Volunteer Program Coordinator",
+      "org": "Travelers Aid International",
+      "location": "Philadelphia, Pennsylvania",
+      "jobType": "Full Time",
+      "salary": "USD 42000.00 - 45000.00/year",
+      "category": "Transportation, Civic Engagement, Seniors Retirement",
+      "url": "https://www.idealist.org/en/nonprofit-job/08748d34563b4c89bba8d6409120ee64-volunteer-program-coordinator-travelers-aid-international-philadelphia"
     },
     {
       "source": "idealist",

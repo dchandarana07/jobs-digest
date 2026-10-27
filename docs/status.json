@@ -1,22 +1,22 @@
 {
-  "at": "2026-10-27T08:47:20.456Z",
+  "at": "2026-10-27T19:59:23.187Z",
   "runDate": "2026-10-27",
   "sources": {
     "cjb": {
       "ok": true,
-      "found": 36
+      "found": 58
     },
     "greenjobs": {
       "ok": true,
-      "found": 4
+      "found": 5
     },
     "idealist": {
       "ok": true,
-      "found": 128
+      "found": 231
     },
     "nafsn": {
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "found": 0
     }
   }
 }

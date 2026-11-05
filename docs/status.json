@@ -1,22 +1,22 @@
 {
-  "at": "2026-11-05T10:32:03.511Z",
+  "at": "2026-11-05T21:25:51.241Z",
   "runDate": "2026-11-05",
   "sources": {
     "cjb": {
       "ok": true,
-      "found": 33
-    },
-    "greenjobs": {
-      "ok": true,
-      "found": 0
+      "found": 79
     },
     "idealist": {
       "ok": true,
-      "found": 134
+      "found": 235
     },
     "nafsn": {
       "ok": true,
       "found": 46
+    },
+    "greenjobs": {
+      "ok": false,
+      "error": "HTTP 403 for https://greenjobs.greenjobsearch.org/feed/"
     }
   }
 }

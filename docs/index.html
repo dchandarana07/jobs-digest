@@ -80,11 +80,18 @@ async function boot() {
   if (INDEX.lastRun) {
     const bad = Object.entries(INDEX.lastRun.sources || {}).filter(([, s]) => !s.ok);
     $('#meta').textContent = `Last updated ${new Date(INDEX.lastRun.at).toLocaleString()}`;
-    if (bad.length) {
-      $('#alerts').innerHTML = `<div class="warn">⚠ Last run couldn't reach: ${
-        bad.map(([k]) => esc(INDEX.sources[k] || k)).join(', ')
-      }. Those tabs may be incomplete for the latest day.</div>`;
+    const alerts = [];
+    // Runs happen twice a day (often hours late); 36h means several missed.
+    const hoursOld = (Date.now() - Date.parse(INDEX.lastRun.at)) / 36e5;
+    if (hoursOld > 36) {
+      alerts.push(`⚠ No update in ${Math.floor(hoursOld / 24)} day(s) — the daily scrape may have stopped. Newer postings are missing.`);
     }
+    if (bad.length) {
+      alerts.push(`⚠ Last run couldn't fully read: ${
+        bad.map(([k]) => esc(INDEX.sources[k] || k)).join(', ')
+      }. Those tabs may be incomplete for the latest days.`);
+    }
+    $('#alerts').innerHTML = alerts.map((a) => `<div class="warn">${a}</div>`).join('');
   }
   if (INDEX.days.length) loadDay(INDEX.days[0].date);
   else $('#content').innerHTML = '<div class="empty">No data yet — first run pending.</div>';

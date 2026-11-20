@@ -1,6 +1,9 @@
-// Orchestrator: scrape every board for a today+yesterday window, upsert into
-// per-day JSON, regenerate XLSX for any changed day, rebuild the index.
-// Exits non-zero only if every source failed (so CI alerts on total outage).
+// Orchestrator: scrape every board for a 3-day window (today and the two days
+// before, Phoenix time), upsert into per-day JSON, regenerate XLSX for any
+// changed day, rebuild the index. GitHub starts scheduled runs hours late and
+// occasionally skips one; the 3-day window keeps a day covered through a
+// couple of missed or failed runs, and the per-URL dedupe makes the overlap
+// free. Exits non-zero only if every source failed (CI then skips the commit).
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -13,7 +16,8 @@ import { upsertPostings, rebuildIndex, DATA_DIR } from './store.mjs';
 import { writeXlsxForDate } from './xlsx.mjs';
 
 const runDate = process.env.RUN_DATE || phxDateString();
-const windowDates = [runDate, dateMinusDays(runDate, 1)];
+const WINDOW_DAYS = 3;
+const windowDates = Array.from({ length: WINDOW_DAYS }, (_, i) => dateMinusDays(runDate, i));
 const ctx = { runDate, windowDates };
 
 const scrapers = {
@@ -40,10 +44,15 @@ for (const r of results) {
   }
 }
 // Results are positional — attribute failures back to their scraper key.
+// A partial failure still carries the postings it got; keep those.
 Object.keys(scrapers).forEach((key, i) => {
   if (!(key in sourceStatus)) {
-    sourceStatus[key] = { ok: false, error: String(results[i].reason?.message || results[i].reason) };
-    console.error(`  ${key}: FAILED — ${sourceStatus[key].error}`);
+    const reason = results[i].reason;
+    const kept = Array.isArray(reason?.postings) ? reason.postings : [];
+    allPostings.push(...kept);
+    sourceStatus[key] = { ok: false, error: String(reason?.message || reason), found: kept.length };
+    const note = kept.length ? ` (kept ${kept.length} postings)` : '';
+    console.error(`  ${key}: FAILED — ${sourceStatus[key].error}${note}`);
   }
 });
 

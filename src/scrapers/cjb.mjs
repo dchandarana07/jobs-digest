@@ -3,10 +3,10 @@
 // resolve against the run date.
 
 import * as cheerio from 'cheerio';
-import { fetchText, cleanText, dateMinusDays } from '../util.mjs';
+import { fetchText, cleanText, dateMinusDays, PartialScrapeError } from '../util.mjs';
 
 const BASE = 'https://www.conservationjobboard.com/';
-const MAX_PAGES = 10;
+const MAX_PAGES = 40; // 15 cards a page; the busiest 3-day window so far was ~170 postings
 
 function labelToDate(label, runDate) {
   const t = label.toLowerCase();
@@ -21,6 +21,10 @@ export async function scrapeCjb({ runDate, windowDates }) {
   const postings = [];
   const seen = new Set();
 
+  let cards = 0;
+  let datedCards = 0;
+  let hitPageCap = false;
+
   for (let page = 1; page <= MAX_PAGES; page++) {
     const url = `${BASE}?sort_by=date${page > 1 ? `&page=${page}` : ''}`;
     const html = await fetchText(url);
@@ -34,8 +38,10 @@ export async function scrapeCjb({ runDate, windowDates }) {
       const jobUrl = href.split('?')[0];
       if (seen.has(jobUrl)) return;
 
+      cards++;
       const label = cleanText($(el).find('.listing__job__time').first().text());
       const date = labelToDate(label, runDate);
+      if (date) datedCards++;
       if (!date || !windowDates.includes(date)) return;
 
       seen.add(jobUrl);
@@ -66,7 +72,15 @@ export async function scrapeCjb({ runDate, windowDates }) {
 
     // Date-sorted: once a whole page contributes nothing in-window, stop.
     if (inWindowThisPage === 0) break;
+    if (page === MAX_PAGES) hitPageCap = true;
   }
 
+  // Quiet days are normal (CJB posts nothing most weekends), so only complain
+  // when the page itself couldn't be read.
+  if (!cards) throw new Error('CJB: no job cards found (page layout changed?)');
+  if (!datedCards) throw new Error('CJB: could not read any posting dates (date labels changed?)');
+  if (hitPageCap) {
+    throw new PartialScrapeError(`CJB: still inside the date window after ${MAX_PAGES} pages`, postings);
+  }
   return postings;
 }

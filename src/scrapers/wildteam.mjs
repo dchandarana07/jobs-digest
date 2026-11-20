@@ -101,10 +101,16 @@ export async function scrapeWildTeam({ runDate }) {
   const jobs = extractJobsArray(readFlightData(await fetchText(LISTING_URL)));
   if (!jobs.length) throw new Error('WildTeam returned no jobs');
 
+  const us = jobs.filter((j) => j.countryCode === 'US');
+  if (!us.length) throw new Error('WildTeam: no US jobs in the listing (countryCode field changed?)');
+  if (!us.some((j) => postedDate(j.postedAt || j.publishedAt))) {
+    throw new Error('WildTeam: could not read any posting dates (postedAt field changed?)');
+  }
+
   const lookback = new Set(Array.from({ length: LOOKBACK_DAYS }, (_, i) => dateMinusDays(runDate, i)));
   const postings = [];
-  for (const job of jobs) {
-    if (job.countryCode !== 'US' || !job.sourceUrl || alreadyScraped(job)) continue;
+  for (const job of us) {
+    if (!job.sourceUrl || alreadyScraped(job)) continue;
     const date = postedDate(job.postedAt || job.publishedAt);
     if (!date || !lookback.has(date)) continue;
 

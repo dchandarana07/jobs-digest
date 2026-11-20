@@ -2,12 +2,13 @@
 // frontend uses (search-only API key shipped in their JS bundle). Records
 // carry an exact `published` unix timestamp.
 
-import { epochToPhxDate, phxMidnightEpoch, cleanText } from '../util.mjs';
+import { epochToPhxDate, phxMidnightEpoch, cleanText, fetchJson, PartialScrapeError } from '../util.mjs';
 
 const APP_ID = 'NSV3AUESS7';
 const SEARCH_KEY = 'c2730ea10ab82787f2f3cc961e8c1e06';
 const INDEX = 'idealist7-production';
 const ENDPOINT = `https://${APP_ID}-dsn.algolia.net/1/indexes/${INDEX}/query`;
+const MAX_PAGES = 20; // 100 hits each
 
 const ATTRS = [
   'name',
@@ -62,9 +63,11 @@ export async function scrapeIdealist({ windowDates }) {
   const postings = [];
   let page = 0;
   let nbPages = 1;
+  let nbHits = 0;
+  let hitsRead = 0;
 
-  while (page < nbPages && page < 20) {
-    const res = await fetch(ENDPOINT, {
+  while (page < nbPages && page < MAX_PAGES) {
+    const data = await fetchJson(ENDPOINT, {
       method: 'POST',
       headers: {
         'x-algolia-application-id': APP_ID,
@@ -79,11 +82,13 @@ export async function scrapeIdealist({ windowDates }) {
         numericFilters: [`published>=${sinceEpoch}`],
         attributesToRetrieve: ATTRS,
       }),
-      signal: AbortSignal.timeout(30000),
     });
-    if (!res.ok) throw new Error(`Algolia HTTP ${res.status}`);
-    const data = await res.json();
+    if (!Array.isArray(data.hits) || typeof data.nbPages !== 'number') {
+      throw new Error('Idealist search response changed shape (no hits/nbPages)');
+    }
     nbPages = data.nbPages;
+    nbHits = data.nbHits ?? 0;
+    hitsRead += data.hits.length;
 
     for (const hit of data.hits) {
       const date = epochToPhxDate(hit.published);
@@ -105,5 +110,15 @@ export async function scrapeIdealist({ windowDates }) {
     page++;
   }
 
+  // Idealist posts well over 100 jobs a day; an empty multi-day window means
+  // the search index or key changed, not a quiet spell.
+  if (!postings.length) {
+    throw new Error('Idealist returned no jobs for the whole window (index or API key changed?)');
+  }
+  // Algolia stops paginating at 1,000 hits (10 pages here) no matter how many
+  // match. The 3-day window is ~350 today; if it ever outgrows the cap, say so.
+  if (hitsRead < nbHits) {
+    throw new PartialScrapeError(`Idealist matched ${nbHits} jobs but only ${hitsRead} could be read`, postings);
+  }
   return postings;
 }

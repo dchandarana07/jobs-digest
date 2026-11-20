@@ -24,11 +24,14 @@ export function dateMinusDays(dateStr, days) {
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
-export async function fetchText(url, { headers = {}, retries = 2, timeoutMs = 30000 } = {}) {
+// Extra options (method, body) pass through to fetch(). Every attempt gets its
+// own timeout; failures are retried with a growing pause.
+export async function fetchText(url, { headers = {}, retries = 2, timeoutMs = 30000, ...init } = {}) {
   let lastErr;
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const res = await fetch(url, {
+        ...init,
         headers: { 'user-agent': UA, ...headers },
         signal: AbortSignal.timeout(timeoutMs),
         redirect: 'follow',
@@ -46,6 +49,16 @@ export async function fetchText(url, { headers = {}, retries = 2, timeoutMs = 30
 export async function fetchJson(url, options = {}) {
   const text = await fetchText(url, options);
   return JSON.parse(text);
+}
+
+// Thrown by a scraper that got some postings but knows it missed others. The
+// orchestrator keeps the postings it carries and still reports the source as
+// failed, so the run shows red instead of silently dropping data.
+export class PartialScrapeError extends Error {
+  constructor(message, postings) {
+    super(message);
+    this.postings = postings;
+  }
 }
 
 export function cleanText(s) {

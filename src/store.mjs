@@ -12,7 +12,6 @@ export const XLSX_DIR = path.join(ROOT, 'docs', 'xlsx');
 
 export const SOURCES = {
   cjb: 'Conservation Job Board',
-  greenjobs: 'Green Jobs',
   idealist: 'Idealist',
   nafsn: 'NAFSN',
 };
@@ -50,7 +49,7 @@ function markCrossPosts(day) {
     for (const p of group) {
       p.alsoOn = sources
         .filter((s) => s !== p.source)
-        .map((s) => SOURCES[s])
+        .map((s) => SOURCES[s] || s)
         .join(', ');
     }
   }

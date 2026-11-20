@@ -1,12 +1,11 @@
 # Daily Jobs Digest
 
-Scrapes new job postings each day from four boards and consolidates them into a
+Scrapes new job postings each day from three boards and consolidates them into a
 per-day digest (web dashboard + downloadable Excel, one worksheet per source):
 
 | Source | Method |
 |---|---|
 | [Conservation Job Board](https://www.conservationjobboard.com/) | HTML, date-sorted listing pages |
-| [Green Jobs](https://greenjobs.greenjobsearch.org/) | RSS feed + JSON-LD job detail pages |
 | [Idealist](https://www.idealist.org/) | The site's own public Algolia search API |
 | [NAFSN](https://members.foodsystemsnetwork.org/members/classifieds5.php?org_id=NAFS) | HTML classifieds table |
 

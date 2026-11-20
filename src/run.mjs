@@ -42,8 +42,12 @@ for (const r of results) {
 // Results are positional — attribute failures back to their scraper key.
 Object.keys(scrapers).forEach((key, i) => {
   if (!(key in sourceStatus)) {
-    sourceStatus[key] = { ok: false, error: String(results[i].reason?.message || results[i].reason) };
-    console.error(`  ${key}: FAILED — ${sourceStatus[key].error}`);
+    const reason = results[i].reason;
+    sourceStatus[key] = { ok: false, error: String(reason?.message || reason) };
+    // A 403 means the site is refusing our requests (bot blocking), not that the
+    // scraper code broke. CI reports these as a warning instead of a failure.
+    if (reason?.status === 403) sourceStatus[key].blocked = true;
+    console.error(`  ${key}: ${sourceStatus[key].blocked ? 'BLOCKED' : 'FAILED'} — ${sourceStatus[key].error}`);
   }
 });
 

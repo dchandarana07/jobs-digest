@@ -33,7 +33,11 @@ export async function fetchText(url, { headers = {}, retries = 2, timeoutMs = 30
         signal: AbortSignal.timeout(timeoutMs),
         redirect: 'follow',
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+      if (!res.ok) {
+        const err = new Error(`HTTP ${res.status} for ${url}`);
+        err.status = res.status;
+        throw err;
+      }
       return await res.text();
     } catch (err) {
       lastErr = err;

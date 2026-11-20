@@ -44,15 +44,22 @@ jobs:
           fi
 
       # Data is already committed above; this step only makes the run show red
-      # (and email the repo owner) when one of the four scrapers broke.
+      # (and email the repo owner) when one of the scrapers broke.
+      # A source the site itself is refusing (HTTP 403) shows as a warning on the
+      # run instead, so one blocked board doesn't turn every run red.
       - name: Fail loud if any source failed
         run: |
           node -e '
             const s = JSON.parse(require("fs").readFileSync("docs/status.json", "utf8"));
             const bad = Object.entries(s.sources).filter(([, v]) => !v.ok);
-            if (bad.length) {
-              console.error("Broken sources:", bad.map(([k, v]) => `${k}: ${v.error}`).join(" | "));
+            const blocked = bad.filter(([, v]) => v.blocked);
+            const broken = bad.filter(([, v]) => !v.blocked);
+            for (const [k, v] of blocked) {
+              console.log(`::warning title=${k} blocked::${k} is refusing requests (${v.error}). Its postings are missing from this run.`);
+            }
+            if (broken.length) {
+              console.error("Broken sources:", broken.map(([k, v]) => `${k}: ${v.error}`).join(" | "));
               process.exit(1);
             }
-            console.log("All sources OK.");
+            console.log(blocked.length ? "Other sources OK." : "All sources OK.");
           '

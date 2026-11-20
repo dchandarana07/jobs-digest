@@ -1,4 +1,4 @@
-// Orchestrator: scrape all 4 boards for a today+yesterday window, upsert into
+// Orchestrator: scrape every board for a today+yesterday window, upsert into
 // per-day JSON, regenerate XLSX for any changed day, rebuild the index.
 // Exits non-zero only if every source failed (so CI alerts on total outage).
 
@@ -6,7 +6,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { phxDateString, dateMinusDays } from './util.mjs';
 import { scrapeCjb } from './scrapers/cjb.mjs';
-import { scrapeGreenJobs } from './scrapers/greenjobs.mjs';
 import { scrapeIdealist } from './scrapers/idealist.mjs';
 import { scrapeNafsn } from './scrapers/nafsn.mjs';
 import { upsertPostings, rebuildIndex, DATA_DIR } from './store.mjs';
@@ -18,7 +17,6 @@ const ctx = { runDate, windowDates };
 
 const scrapers = {
   cjb: scrapeCjb,
-  greenjobs: scrapeGreenJobs,
   idealist: scrapeIdealist,
   nafsn: scrapeNafsn,
 };
@@ -42,8 +40,12 @@ for (const r of results) {
 // Results are positional — attribute failures back to their scraper key.
 Object.keys(scrapers).forEach((key, i) => {
   if (!(key in sourceStatus)) {
-    sourceStatus[key] = { ok: false, error: String(results[i].reason?.message || results[i].reason) };
-    console.error(`  ${key}: FAILED — ${sourceStatus[key].error}`);
+    const reason = results[i].reason;
+    sourceStatus[key] = { ok: false, error: String(reason?.message || reason) };
+    // A 403 means the site is refusing our requests (bot blocking), not that the
+    // scraper code broke. CI reports these as a warning instead of a failure.
+    if (reason?.status === 403) sourceStatus[key].blocked = true;
+    console.error(`  ${key}: ${sourceStatus[key].blocked ? 'BLOCKED' : 'FAILED'} — ${sourceStatus[key].error}`);
   }
 });
 
@@ -63,5 +65,5 @@ rebuildIndex({ lastRun });
 fs.writeFileSync(path.join(DATA_DIR, '..', 'status.json'), JSON.stringify(lastRun, null, 2));
 
 const okCount = Object.values(sourceStatus).filter((s) => s.ok).length;
-console.log(`Done. ${okCount}/4 sources OK, ${allPostings.length} postings in window.`);
+console.log(`Done. ${okCount}/${Object.keys(scrapers).length} sources OK, ${allPostings.length} postings in window.`);
 if (okCount === 0) process.exit(1);

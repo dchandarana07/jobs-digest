@@ -1,6 +1,6 @@
 {
   "lastRun": {
-    "at": "2026-11-19T22:37:52.112Z",
+    "at": "2026-11-20T03:44:45.662Z",
     "runDate": "2026-11-19",
     "sources": {
       "cjb": {
@@ -9,63 +9,71 @@
       },
       "idealist": {
         "ok": true,
-        "found": 196
+        "found": 213
       },
       "nafsn": {
         "ok": true,
         "found": 49
       },
-      "greenjobs": {
-        "ok": false,
-        "error": "HTTP 403 for https://greenjobs.greenjobsearch.org/feed/"
+      "wildteam": {
+        "ok": true,
+        "found": 8
       }
     }
   },
   "sources": {
     "cjb": "Conservation Job Board",
-    "greenjobs": "Green Jobs",
     "idealist": "Idealist",
-    "nafsn": "NAFSN"
+    "nafsn": "NAFSN",
+    "wildteam": "WildTeam",
+    "greenjobs": "Green Jobs"
   },
+  "retired": [
+    "greenjobs"
+  ],
   "days": [
     {
       "date": "2026-11-19",
-      "total": 119,
+      "total": 138,
       "counts": {
         "cjb": 39,
-        "greenjobs": 0,
-        "idealist": 80,
-        "nafsn": 0
+        "idealist": 97,
+        "nafsn": 0,
+        "wildteam": 2,
+        "greenjobs": 0
       }
     },
     {
       "date": "2026-11-18",
-      "total": 205,
+      "total": 206,
       "counts": {
         "cjb": 38,
-        "greenjobs": 0,
         "idealist": 118,
-        "nafsn": 49
+        "nafsn": 49,
+        "wildteam": 1,
+        "greenjobs": 0
       }
     },
     {
       "date": "2026-11-17",
-      "total": 182,
+      "total": 184,
       "counts": {
         "cjb": 47,
-        "greenjobs": 0,
         "idealist": 135,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 2,
+        "greenjobs": 0
       }
     },
     {
       "date": "2026-11-16",
-      "total": 174,
+      "total": 175,
       "counts": {
         "cjb": 57,
-        "greenjobs": 0,
         "idealist": 117,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 1,
+        "greenjobs": 0
       }
     },
     {
@@ -73,9 +81,10 @@
       "total": 29,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 29,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -83,19 +92,21 @@
       "total": 8,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 8,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
       "date": "2026-11-13",
-      "total": 183,
+      "total": 185,
       "counts": {
         "cjb": 33,
-        "greenjobs": 0,
         "idealist": 150,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 2,
+        "greenjobs": 0
       }
     },
     {
@@ -103,9 +114,10 @@
       "total": 140,
       "counts": {
         "cjb": 26,
-        "greenjobs": 0,
         "idealist": 114,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -113,9 +125,10 @@
       "total": 180,
       "counts": {
         "cjb": 47,
-        "greenjobs": 0,
         "idealist": 75,
-        "nafsn": 58
+        "nafsn": 58,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -123,9 +136,10 @@
       "total": 176,
       "counts": {
         "cjb": 51,
-        "greenjobs": 0,
         "idealist": 125,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -133,9 +147,10 @@
       "total": 149,
       "counts": {
         "cjb": 36,
-        "greenjobs": 0,
         "idealist": 113,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -143,9 +158,10 @@
       "total": 10,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 10,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -153,9 +169,10 @@
       "total": 7,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 7,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -163,9 +180,10 @@
       "total": 203,
       "counts": {
         "cjb": 43,
-        "greenjobs": 0,
         "idealist": 160,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -173,9 +191,10 @@
       "total": 187,
       "counts": {
         "cjb": 46,
-        "greenjobs": 0,
         "idealist": 141,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -183,9 +202,10 @@
       "total": 214,
       "counts": {
         "cjb": 33,
-        "greenjobs": 0,
         "idealist": 135,
-        "nafsn": 46
+        "nafsn": 46,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -193,9 +213,10 @@
       "total": 162,
       "counts": {
         "cjb": 51,
-        "greenjobs": 1,
         "idealist": 110,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -203,9 +224,10 @@
       "total": 168,
       "counts": {
         "cjb": 43,
-        "greenjobs": 3,
         "idealist": 122,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -213,9 +235,10 @@
       "total": 10,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 10,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -223,9 +246,10 @@
       "total": 5,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 5,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -233,9 +257,10 @@
       "total": 144,
       "counts": {
         "cjb": 25,
-        "greenjobs": 0,
         "idealist": 119,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -243,9 +268,10 @@
       "total": 179,
       "counts": {
         "cjb": 37,
-        "greenjobs": 1,
         "idealist": 141,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -253,9 +279,10 @@
       "total": 207,
       "counts": {
         "cjb": 45,
-        "greenjobs": 3,
         "idealist": 110,
-        "nafsn": 49
+        "nafsn": 49,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -263,9 +290,10 @@
       "total": 167,
       "counts": {
         "cjb": 22,
-        "greenjobs": 2,
         "idealist": 143,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -273,9 +301,10 @@
       "total": 168,
       "counts": {
         "cjb": 36,
-        "greenjobs": 4,
         "idealist": 128,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 4
       }
     },
     {
@@ -283,9 +312,10 @@
       "total": 7,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 7,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -293,9 +323,10 @@
       "total": 9,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 9,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -303,9 +334,10 @@
       "total": 163,
       "counts": {
         "cjb": 33,
-        "greenjobs": 0,
         "idealist": 130,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -313,9 +345,10 @@
       "total": 160,
       "counts": {
         "cjb": 31,
-        "greenjobs": 1,
         "idealist": 128,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -323,9 +356,10 @@
       "total": 185,
       "counts": {
         "cjb": 38,
-        "greenjobs": 1,
         "idealist": 98,
-        "nafsn": 48
+        "nafsn": 48,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -333,9 +367,10 @@
       "total": 176,
       "counts": {
         "cjb": 42,
-        "greenjobs": 3,
         "idealist": 131,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -343,9 +378,10 @@
       "total": 171,
       "counts": {
         "cjb": 37,
-        "greenjobs": 4,
         "idealist": 130,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 4
       }
     },
     {
@@ -353,9 +389,10 @@
       "total": 7,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 7,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -363,9 +400,10 @@
       "total": 5,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 5,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -373,9 +411,10 @@
       "total": 173,
       "counts": {
         "cjb": 42,
-        "greenjobs": 1,
         "idealist": 130,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -383,9 +422,10 @@
       "total": 197,
       "counts": {
         "cjb": 48,
-        "greenjobs": 1,
         "idealist": 148,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -393,9 +433,10 @@
       "total": 193,
       "counts": {
         "cjb": 23,
-        "greenjobs": 1,
         "idealist": 125,
-        "nafsn": 44
+        "nafsn": 44,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -403,9 +444,10 @@
       "total": 154,
       "counts": {
         "cjb": 33,
-        "greenjobs": 4,
         "idealist": 117,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 4
       }
     },
     {
@@ -413,9 +455,10 @@
       "total": 105,
       "counts": {
         "cjb": 50,
-        "greenjobs": 0,
         "idealist": 55,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -423,9 +466,10 @@
       "total": 16,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 16,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -433,9 +477,10 @@
       "total": 8,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 8,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -443,9 +488,10 @@
       "total": 182,
       "counts": {
         "cjb": 33,
-        "greenjobs": 2,
         "idealist": 147,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -453,9 +499,10 @@
       "total": 204,
       "counts": {
         "cjb": 40,
-        "greenjobs": 3,
         "idealist": 161,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -463,9 +510,10 @@
       "total": 185,
       "counts": {
         "cjb": 41,
-        "greenjobs": 2,
         "idealist": 142,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -473,9 +521,10 @@
       "total": 197,
       "counts": {
         "cjb": 32,
-        "greenjobs": 2,
         "idealist": 119,
-        "nafsn": 44
+        "nafsn": 44,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -483,9 +532,10 @@
       "total": 170,
       "counts": {
         "cjb": 44,
-        "greenjobs": 0,
         "idealist": 126,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -493,9 +543,10 @@
       "total": 11,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 11,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -503,9 +554,10 @@
       "total": 7,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 7,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -513,9 +565,10 @@
       "total": 198,
       "counts": {
         "cjb": 57,
-        "greenjobs": 0,
         "idealist": 141,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -523,9 +576,10 @@
       "total": 173,
       "counts": {
         "cjb": 50,
-        "greenjobs": 4,
         "idealist": 119,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 4
       }
     },
     {
@@ -533,9 +587,10 @@
       "total": 161,
       "counts": {
         "cjb": 30,
-        "greenjobs": 0,
         "idealist": 131,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -543,9 +598,10 @@
       "total": 208,
       "counts": {
         "cjb": 30,
-        "greenjobs": 0,
         "idealist": 134,
-        "nafsn": 44
+        "nafsn": 44,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -553,9 +609,10 @@
       "total": 166,
       "counts": {
         "cjb": 37,
-        "greenjobs": 0,
         "idealist": 129,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -563,9 +620,10 @@
       "total": 8,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 8,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -573,9 +631,10 @@
       "total": 6,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 6,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -583,9 +642,10 @@
       "total": 175,
       "counts": {
         "cjb": 34,
-        "greenjobs": 0,
         "idealist": 141,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -593,9 +653,10 @@
       "total": 162,
       "counts": {
         "cjb": 32,
-        "greenjobs": 0,
         "idealist": 130,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -603,9 +664,10 @@
       "total": 168,
       "counts": {
         "cjb": 42,
-        "greenjobs": 1,
         "idealist": 125,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -613,9 +675,10 @@
       "total": 206,
       "counts": {
         "cjb": 46,
-        "greenjobs": 1,
         "idealist": 115,
-        "nafsn": 44
+        "nafsn": 44,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -623,9 +686,10 @@
       "total": 159,
       "counts": {
         "cjb": 57,
-        "greenjobs": 0,
         "idealist": 102,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -633,9 +697,10 @@
       "total": 8,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 8,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -643,9 +708,10 @@
       "total": 7,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 7,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -653,9 +719,10 @@
       "total": 196,
       "counts": {
         "cjb": 30,
-        "greenjobs": 3,
         "idealist": 163,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -663,9 +730,10 @@
       "total": 167,
       "counts": {
         "cjb": 26,
-        "greenjobs": 0,
         "idealist": 140,
-        "nafsn": 1
+        "nafsn": 1,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -673,9 +741,10 @@
       "total": 191,
       "counts": {
         "cjb": 47,
-        "greenjobs": 0,
         "idealist": 144,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -683,9 +752,10 @@
       "total": 225,
       "counts": {
         "cjb": 42,
-        "greenjobs": 2,
         "idealist": 134,
-        "nafsn": 47
+        "nafsn": 47,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -693,9 +763,10 @@
       "total": 175,
       "counts": {
         "cjb": 45,
-        "greenjobs": 1,
         "idealist": 129,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -703,9 +774,10 @@
       "total": 6,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 6,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -713,9 +785,10 @@
       "total": 9,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 9,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -723,9 +796,10 @@
       "total": 209,
       "counts": {
         "cjb": 27,
-        "greenjobs": 0,
         "idealist": 182,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -733,9 +807,10 @@
       "total": 183,
       "counts": {
         "cjb": 29,
-        "greenjobs": 1,
         "idealist": 153,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -743,9 +818,10 @@
       "total": 194,
       "counts": {
         "cjb": 45,
-        "greenjobs": 1,
         "idealist": 148,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -753,9 +829,10 @@
       "total": 187,
       "counts": {
         "cjb": 7,
-        "greenjobs": 0,
         "idealist": 139,
-        "nafsn": 41
+        "nafsn": 41,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -763,9 +840,10 @@
       "total": 62,
       "counts": {
         "cjb": 36,
-        "greenjobs": 0,
         "idealist": 26,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -773,9 +851,10 @@
       "total": 11,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 11,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -783,9 +862,10 @@
       "total": 6,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 6,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -793,9 +873,10 @@
       "total": 200,
       "counts": {
         "cjb": 36,
-        "greenjobs": 0,
         "idealist": 164,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -803,9 +884,10 @@
       "total": 173,
       "counts": {
         "cjb": 32,
-        "greenjobs": 0,
         "idealist": 141,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -813,9 +895,10 @@
       "total": 200,
       "counts": {
         "cjb": 27,
-        "greenjobs": 1,
         "idealist": 135,
-        "nafsn": 37
+        "nafsn": 37,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -823,9 +906,10 @@
       "total": 180,
       "counts": {
         "cjb": 31,
-        "greenjobs": 3,
         "idealist": 134,
-        "nafsn": 12
+        "nafsn": 12,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -833,9 +917,10 @@
       "total": 143,
       "counts": {
         "cjb": 31,
-        "greenjobs": 0,
         "idealist": 112,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -843,9 +928,10 @@
       "total": 2,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 2,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -853,9 +939,10 @@
       "total": 8,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 8,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -863,9 +950,10 @@
       "total": 161,
       "counts": {
         "cjb": 23,
-        "greenjobs": 0,
         "idealist": 138,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -873,9 +961,10 @@
       "total": 138,
       "counts": {
         "cjb": 22,
-        "greenjobs": 1,
         "idealist": 115,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -883,9 +972,10 @@
       "total": 207,
       "counts": {
         "cjb": 39,
-        "greenjobs": 2,
         "idealist": 142,
-        "nafsn": 24
+        "nafsn": 24,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -893,9 +983,10 @@
       "total": 223,
       "counts": {
         "cjb": 31,
-        "greenjobs": 3,
         "idealist": 143,
-        "nafsn": 46
+        "nafsn": 46,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -903,9 +994,10 @@
       "total": 172,
       "counts": {
         "cjb": 32,
-        "greenjobs": 3,
         "idealist": 137,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 3
       }
     },
     {
@@ -913,9 +1005,10 @@
       "total": 30,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 30,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -923,9 +1016,10 @@
       "total": 7,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 7,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -933,9 +1027,10 @@
       "total": 142,
       "counts": {
         "cjb": 31,
-        "greenjobs": 2,
         "idealist": 109,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -943,9 +1038,10 @@
       "total": 124,
       "counts": {
         "cjb": 32,
-        "greenjobs": 0,
         "idealist": 92,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -953,9 +1049,10 @@
       "total": 198,
       "counts": {
         "cjb": 22,
-        "greenjobs": 1,
         "idealist": 175,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -963,9 +1060,10 @@
       "total": 250,
       "counts": {
         "cjb": 37,
-        "greenjobs": 2,
         "idealist": 159,
-        "nafsn": 52
+        "nafsn": 52,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -973,9 +1071,10 @@
       "total": 199,
       "counts": {
         "cjb": 33,
-        "greenjobs": 2,
         "idealist": 164,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 2
       }
     },
     {
@@ -983,9 +1082,10 @@
       "total": 18,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 18,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -993,9 +1093,10 @@
       "total": 9,
       "counts": {
         "cjb": 0,
-        "greenjobs": 0,
         "idealist": 9,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -1003,9 +1104,10 @@
       "total": 151,
       "counts": {
         "cjb": 46,
-        "greenjobs": 0,
         "idealist": 105,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     },
     {
@@ -1013,9 +1115,10 @@
       "total": 185,
       "counts": {
         "cjb": 40,
-        "greenjobs": 1,
         "idealist": 144,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 1
       }
     },
     {
@@ -1023,9 +1126,10 @@
       "total": 239,
       "counts": {
         "cjb": 85,
-        "greenjobs": 0,
         "idealist": 154,
-        "nafsn": 0
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
       }
     }
   ]

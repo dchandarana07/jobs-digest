@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-19T22:37:52.112Z",
+  "at": "2026-11-20T03:44:45.662Z",
   "runDate": "2026-11-19",
   "sources": {
     "cjb": {
@@ -8,15 +8,15 @@
     },
     "idealist": {
       "ok": true,
-      "found": 196
+      "found": 213
     },
     "nafsn": {
       "ok": true,
       "found": 49
     },
-    "greenjobs": {
-      "ok": false,
-      "error": "HTTP 403 for https://greenjobs.greenjobsearch.org/feed/"
+    "wildteam": {
+      "ok": true,
+      "found": 8
     }
   }
 }

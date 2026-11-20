@@ -2,10 +2,12 @@ name: Daily scrape
 
 on:
   schedule:
-    # 03:00 UTC = 8:00 PM Phoenix (main end-of-day run)
-    - cron: '0 3 * * *'
-    # 15:00 UTC = 8:00 AM Phoenix (catch-up for late postings from yesterday)
-    - cron: '0 15 * * *'
+    # Targets 8:17 PM and 8:17 AM Phoenix (03:17 / 15:17 UTC). GitHub queues
+    # scheduled runs behind everyone else's, and runs here have started 5–9
+    # hours late; the off-the-hour minute avoids the worst of that queue, and
+    # the scraper's 3-day window covers whatever delay remains.
+    - cron: '17 3 * * *'
+    - cron: '17 15 * * *'
   workflow_dispatch:
 
 permissions:
@@ -18,10 +20,12 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    # A healthy run takes well under a minute; don't let a hang burn 6 hours.
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -30,18 +34,27 @@ jobs:
 
       - run: node src/run.mjs
 
+      # Only main publishes data. A manual run on another branch still scrapes
+      # and checks every source, but leaves the published data alone.
       - name: Commit and push results
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "jobs-digest-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs/data docs/xlsx docs/status.json
           if git diff --cached --quiet; then
             echo "No new postings — nothing to commit."
-          else
-            git commit -m "data: scrape $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull --rebase origin main
-            git push origin main
+            exit 0
           fi
+          git commit -m "data: scrape $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Someone may push to main while this runs; rebase and retry.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            echo "Push attempt $attempt failed; retrying in $((attempt * 10))s"
+            sleep $((attempt * 10))
+          done
+          echo "Could not push results after 3 attempts"
+          exit 1
 
       # Data is already committed above; this step only makes the run show red
       # (and email the repo owner) when one of the scrapers broke.

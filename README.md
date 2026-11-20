@@ -21,14 +21,31 @@ up on the days they were scraped.
 
 ## How it works
 
-- `src/run.mjs` scrapes a **today + yesterday** window (Phoenix time), dedupes
-  by posting URL, and assigns each posting to its own posting date — so re-runs
-  are idempotent and late postings are picked up by the next run.
+- `src/run.mjs` scrapes a **3-day** window (today and the two days before,
+  Phoenix time; WildTeam looks back 7 days), dedupes by posting URL, and
+  assigns each posting to its own posting date — so re-runs are idempotent,
+  late postings are picked up by the next run, and a day stays covered through
+  a couple of missed or failed runs.
 - Results land in `docs/data/YYYY-MM-DD.json`; `docs/xlsx/jobs-YYYY-MM-DD.xlsx`
   is regenerated for any day that changed.
 - GitHub Actions (`.github/workflows/scrape.yml`) runs twice daily
-  (8 AM and 8 PM Phoenix) and commits the results.
+  (scheduled for 8:17 AM and 8:17 PM Phoenix, though GitHub often starts them
+  hours late) and commits the results. Manual runs on other branches scrape
+  and check every source but don't publish.
 - GitHub Pages serves `docs/` as the dashboard.
+
+## When something breaks
+
+- A run turns red, and GitHub emails the repo owner, when any source fails.
+  Data from the sources that worked is still published.
+- Each scraper checks that it could actually read its page (job cards, dates,
+  table rows), not just that it found jobs, because quiet days are normal
+  (CJB posts nothing most weekends; NAFSN posts in batches). A layout change
+  shows up as a failure instead of a silent "0 postings".
+- If a scraper hits its page limit and knows it missed postings, it keeps what
+  it got and still reports a failure.
+- The dashboard shows a warning if the data is more than 36 hours old or the
+  last run couldn't fully read a source.
 
 ## Run locally
 

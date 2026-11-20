@@ -16,12 +16,14 @@ export async function scrapeNafsn({ windowDates }) {
   const html = await fetchText(URL);
   const $ = cheerio.load(html);
   const postings = [];
+  let datedRows = 0;
 
   $('#classifiedads tbody tr').each((_, tr) => {
     const cells = $(tr).find('td');
     if (cells.length < 4) return;
 
     const date = toIsoDate(cleanText($(cells[0]).find('p').text()));
+    if (date) datedRows++;
     if (!date || !windowDates.includes(date)) return;
 
     const rawTitle = cleanText($(cells[1]).text());
@@ -45,5 +47,8 @@ export async function scrapeNafsn({ windowDates }) {
     });
   });
 
+  // NAFSN posts in batches, so an empty window is normal; an unreadable
+  // table is not.
+  if (!datedRows) throw new Error('NAFSN: no dated rows in the classifieds table (page layout changed?)');
   return postings;
 }

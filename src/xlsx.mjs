@@ -3,7 +3,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 import ExcelJS from 'exceljs';
-import { SOURCES, XLSX_DIR, loadDay } from './store.mjs';
+import { SOURCES, RETIRED_SOURCES, XLSX_DIR, loadDay } from './store.mjs';
 
 const COLUMNS = [
   { header: 'Title', key: 'title', width: 48 },
@@ -22,13 +22,15 @@ export async function writeXlsxForDate(date) {
   wb.created = new Date();
 
   for (const [key, label] of Object.entries(SOURCES)) {
+    const postings = day.postings.filter((p) => p.source === key);
+    if (!postings.length && RETIRED_SOURCES.includes(key)) continue;
     const ws = wb.addWorksheet(label);
     ws.columns = COLUMNS;
     ws.getRow(1).font = { bold: true };
     ws.autoFilter = { from: 'A1', to: 'H1' };
     ws.views = [{ state: 'frozen', ySplit: 1 }];
 
-    for (const p of day.postings.filter((p) => p.source === key)) {
+    for (const p of postings) {
       const row = ws.addRow({ ...p });
       const cell = row.getCell('url');
       cell.value = { text: p.url, hyperlink: p.url };

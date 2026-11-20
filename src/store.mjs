@@ -12,10 +12,16 @@ export const XLSX_DIR = path.join(ROOT, 'docs', 'xlsx');
 
 export const SOURCES = {
   cjb: 'Conservation Job Board',
-  greenjobs: 'Green Jobs',
   idealist: 'Idealist',
   nafsn: 'NAFSN',
+  wildteam: 'WildTeam',
+  greenjobs: 'Green Jobs',
 };
+
+// No longer scraped, but kept so older days still show their postings. The
+// dashboard and Excel files hide a retired source on days it has none.
+// Green Jobs put its whole site behind a Cloudflare bot check in Nov 2026.
+export const RETIRED_SOURCES = ['greenjobs'];
 
 function dayPath(date) {
   return path.join(DATA_DIR, `${date}.json`);
@@ -108,7 +114,7 @@ export function rebuildIndex({ lastRun }) {
     })
     .sort((a, b) => b.date.localeCompare(a.date));
 
-  const index = { lastRun, sources: SOURCES, days };
+  const index = { lastRun, sources: SOURCES, retired: RETIRED_SOURCES, days };
   fs.writeFileSync(path.join(DATA_DIR, 'index.json'), JSON.stringify(index, null, 2));
   return index;
 }

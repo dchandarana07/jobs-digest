@@ -51,7 +51,7 @@
 <body>
 <header>
   <h1>Daily Jobs Digest</h1>
-  <div class="sub">New postings from Conservation Job Board, Green Jobs, Idealist, and NAFSN — one day per sheet.</div>
+  <div class="sub">New postings from Conservation Job Board, Idealist, NAFSN, and WildTeam — one day per sheet.</div>
 </header>
 <main>
   <div class="controls">
@@ -98,12 +98,15 @@ async function loadDay(date) {
   for (const k of Object.keys(INDEX.sources)) counts[k] = 0;
   for (const p of DAY.postings) counts[p.source] = (counts[p.source] || 0) + 1;
 
-  $('#tabs').innerHTML = Object.entries(INDEX.sources).map(([k, label]) =>
-    `<button class="tab" data-k="${k}">${esc(label)}<span class="count">${counts[k]}</span></button>`
+  // Retired sources only get a tab on older days that still have their postings.
+  const retired = INDEX.retired || [];
+  const keys = Object.keys(INDEX.sources).filter((k) => counts[k] > 0 || !retired.includes(k));
+  $('#tabs').innerHTML = keys.map((k) =>
+    `<button class="tab" data-k="${k}">${esc(INDEX.sources[k])}<span class="count">${counts[k]}</span></button>`
   ).join('');
   document.querySelectorAll('.tab').forEach((b) => (b.onclick = () => render(b.dataset.k)));
 
-  const first = Object.keys(INDEX.sources).find((k) => counts[k] > 0) || Object.keys(INDEX.sources)[0];
+  const first = keys.find((k) => counts[k] > 0) || keys[0];
   render(ACTIVE && counts[ACTIVE] > 0 ? ACTIVE : first);
 }
 

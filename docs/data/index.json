@@ -1,19 +1,19 @@
 {
   "lastRun": {
-    "at": "2026-11-20T22:15:09.837Z",
-    "runDate": "2026-11-20",
+    "at": "2026-11-21T11:20:29.756Z",
+    "runDate": "2026-11-21",
     "sources": {
       "cjb": {
         "ok": true,
-        "found": 131
+        "found": 93
       },
       "idealist": {
         "ok": true,
-        "found": 326
+        "found": 230
       },
       "nafsn": {
         "ok": true,
-        "found": 49
+        "found": 0
       },
       "wildteam": {
         "ok": true,
@@ -33,11 +33,22 @@
   ],
   "days": [
     {
+      "date": "2026-11-21",
+      "total": 5,
+      "counts": {
+        "cjb": 0,
+        "idealist": 5,
+        "nafsn": 0,
+        "wildteam": 0,
+        "greenjobs": 0
+      }
+    },
+    {
       "date": "2026-11-20",
-      "total": 161,
+      "total": 177,
       "counts": {
         "cjb": 54,
-        "idealist": 107,
+        "idealist": 123,
         "nafsn": 0,
         "wildteam": 0,
         "greenjobs": 0

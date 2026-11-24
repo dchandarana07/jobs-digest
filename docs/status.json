@@ -1,14 +1,14 @@
 {
-  "at": "2026-11-24T13:54:06.030Z",
+  "at": "2026-11-24T23:54:08.319Z",
   "runDate": "2026-11-24",
   "sources": {
     "cjb": {
       "ok": true,
-      "found": 121
+      "found": 123
     },
     "idealist": {
       "ok": true,
-      "found": 185
+      "found": 290
     },
     "nafsn": {
       "ok": true,
@@ -16,7 +16,7 @@
     },
     "wildteam": {
       "ok": true,
-      "found": 6
+      "found": 13
     }
   }
 }

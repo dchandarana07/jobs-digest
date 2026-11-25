@@ -1137,6 +1137,50 @@
     {
       "source": "idealist",
       "date": "2026-11-24",
+      "title": "Community Organizer",
+      "org": "ACORN Canada",
+      "location": "Toronto, Ontario, CA",
+      "jobType": "Full Time",
+      "salary": "CAD 43390.00 - 45300.00/year",
+      "category": "Civic Engagement, Climate Change, Consumer Protection",
+      "url": "https://www.idealist.org/en/nonprofit-job/eaca766e8f7945f4a24a859a72a96b58-community-organizer-acorn-canada-toronto"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Community Organizer",
+      "org": "ACORN Canada",
+      "location": "Brampton, Ontario, CA",
+      "jobType": "Full Time",
+      "salary": "CAD 43390.00 - 45300.00/year",
+      "category": "Civic Engagement, Climate Change, Consumer Protection",
+      "url": "https://www.idealist.org/en/nonprofit-job/c27b5defa6854a8fa5d6bfc7f0ad91e3-community-organizer-acorn-canada-brampton"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Community Organizer",
+      "org": "ACORN Canada",
+      "location": "Ottawa, Ontario, CA",
+      "jobType": "Full Time",
+      "salary": "CAD 43390.00 - 45300.00/year",
+      "category": "Civic Engagement, Climate Change, Consumer Protection",
+      "url": "https://www.idealist.org/en/nonprofit-job/a050d0e9d5de4d46a4880637f6e5d6b3-community-organizer-acorn-canada-ottawa"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Community Organizer",
+      "org": "ACORN Canada",
+      "location": "Mississauga, Ontario, CA",
+      "jobType": "Full Time",
+      "salary": "CAD 43390.00 - 45300.00/year",
+      "category": "Civic Engagement, Climate Change, Consumer Protection",
+      "url": "https://www.idealist.org/en/nonprofit-job/127ee9242bd84815a941dc5215dbb62d-community-organizer-acorn-canada-mississauga"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
       "title": "Compliance Director",
       "org": "Upper Manhattan Mental Health Center, Inc.",
       "location": "New York, New York",
@@ -1177,6 +1221,17 @@
       "salary": "MXN 26250.00 - 26250.00/month",
       "category": "Health Medicine, Human Rights Civil Liberties, Mental Health",
       "url": "https://www.idealist.org/en/nonprofit-job/5f21b86b95cd48468529e8374baed589-coordinacion-hospitalaria-jaltenango-companeros-en-salud-angel-albino-corzo"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Coordinator of Congregational Life",
+      "org": "Luther Memorial Church",
+      "location": "Chicago, Illinois",
+      "jobType": "Full Time",
+      "salary": "USD 59000.00 - 64000.00/year",
+      "category": "Religion Spirituality",
+      "url": "https://www.idealist.org/en/nonprofit-job/b0c172a8a2a54807883a17fc9381910a-coordinator-of-congregational-life-luther-memorial-church-chicago"
     },
     {
       "source": "idealist",
@@ -1522,6 +1577,17 @@
     {
       "source": "idealist",
       "date": "2026-11-24",
+      "title": "Head of Diversity, Inclusion, and Belonging",
+      "org": "Lincoln Families",
+      "location": "Oakland, California",
+      "jobType": "Full Time",
+      "salary": "USD 120000.00 - 130000.00/year",
+      "category": "Children Youth, Family, Mental Health",
+      "url": "https://www.idealist.org/en/nonprofit-job/f719290856794926a54af3300d05f5b6-head-of-diversity-inclusion-and-belonging-lincoln-families-oakland"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
       "title": "Institutional Giving Manager",
       "org": "Mass Mentoring Partnership",
       "location": "Boston, Massachusetts",
@@ -1606,6 +1672,39 @@
       "salary": "USD 60000.00 - 75000.00/year",
       "category": "Human Rights Civil Liberties, Legal Assistance",
       "url": "https://www.idealist.org/en/nonprofit-job/8472541414234a16ae262634a41542e9-legal-investigator-american-civil-liberties-union-of-colorado-aclu-co-denver"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Legislative & Advocacy Specialist",
+      "org": "Protect Democracy",
+      "location": "Washington, District of Columbia",
+      "jobType": "Full Time",
+      "salary": "USD 84300.00 - 94000.00/year",
+      "category": "Civic Engagement, Human Rights Civil Liberties, Policy",
+      "url": "https://www.idealist.org/en/nonprofit-job/7729663dd48648c9a883cded50d331c5-legislative-advocacy-specialist-protect-democracy-washington"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Legislative & Advocacy Strategist, Corruption & Oversight",
+      "org": "Protect Democracy",
+      "location": "Washington, District of Columbia",
+      "jobType": "Full Time",
+      "salary": "USD 141000.00 - 179000.00/year",
+      "category": "Civic Engagement, Policy, Human Rights Civil Liberties",
+      "url": "https://www.idealist.org/en/nonprofit-job/e2471e84dd824587b3ccc5a19ba00a83-legislative-advocacy-strategist-corruption-oversight-protect-democracy-washington"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Legislative & Advocacy Strategist, Proportional Representation",
+      "org": "Protect Democracy",
+      "location": "Washington, District of Columbia",
+      "jobType": "Full Time",
+      "salary": "USD 141100.00 - 179000.00/year",
+      "category": "Civic Engagement, Human Rights Civil Liberties",
+      "url": "https://www.idealist.org/en/nonprofit-job/ecec7eadf7374f948a2c26e87702a164-legislative-advocacy-strategist-proportional-representation-protect-democracy-washington"
     },
     {
       "source": "idealist",
@@ -1852,6 +1951,28 @@
     {
       "source": "idealist",
       "date": "2026-11-24",
+      "title": "Seattle Program Manager",
+      "org": "Back On My Feet.",
+      "location": "Seattle, Washington",
+      "jobType": "Full Time",
+      "salary": "USD 65000.00 - 70000.00/year",
+      "category": "Housing Homelessness, Job Workplace, Volunteering",
+      "url": "https://www.idealist.org/en/nonprofit-job/049666bbb7be4403bd77c3367e378c2b-seattle-program-manager-back-on-my-feet-seattle"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "SEIU Union Organizer-In-Training, San Francisco",
+      "org": "SEIU",
+      "location": "San Francisco, California",
+      "jobType": "Full Time",
+      "salary": "USD 56000.00 - 56001.00/year",
+      "category": "",
+      "url": "https://www.idealist.org/en/job/9c9133490ec34cd08caca71c66106396-seiu-union-organizer-in-training-san-francisco-seiu-san-francisco"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
       "title": "Senior Accountant",
       "org": "The Nemasket Group, Inc.",
       "location": "Mattapoisett, Massachusetts",
@@ -1914,6 +2035,17 @@
       "salary": "USD 70000.00 - 74000.00/year",
       "category": "",
       "url": "https://www.idealist.org/en/nonprofit-job/f53befea1db74e43b8ac8eb63c2a3a84-site-associate-greenlight-fund-kansas-city-greenlight-fund-kansas-city"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Social Work Lead / Manager",
+      "org": "VAST BC - Vancouver Association for Survivors of Torture",
+      "location": "Vancouver, British Columbia, CA",
+      "jobType": "Full Time",
+      "salary": "CAD 35.00 - 47.00/hour",
+      "category": "Civic Engagement, Conflict Resolution, Immigrants Or Refugees",
+      "url": "https://www.idealist.org/en/nonprofit-job/7092168daac74468856b997d0e911ece-social-work-lead-manager-vast-bc-vancouver-association-for-survivors-of-torture-vancouver"
     },
     {
       "source": "idealist",
@@ -1991,6 +2123,17 @@
       "salary": "USD 78000.00 - 82000.00/year",
       "category": "Family, Legal Assistance, Volunteering",
       "url": "https://www.idealist.org/en/nonprofit-job/4cdc8a9d64764ea1a8ea427109cffeb7-vice-president-of-finance-operations-administer-justice-elgin"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-24",
+      "title": "Vice President of Operations",
+      "org": "Youth Eastside Services",
+      "location": "Bellevue, Washington",
+      "jobType": "Full Time",
+      "salary": "USD 160000.00 - 185000.00/year",
+      "category": "Children Youth, Family, Mental Health",
+      "url": "https://www.idealist.org/en/nonprofit-job/cd239665625549a4949ecaaa84fa045e-vice-president-of-operations-youth-eastside-services-bellevue"
     },
     {
       "source": "idealist",

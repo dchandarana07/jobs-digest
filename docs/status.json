@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-26T12:48:31.219Z",
+  "at": "2026-11-26T23:51:28.974Z",
   "runDate": "2026-11-26",
   "sources": {
     "cjb": {
@@ -8,11 +8,11 @@
     },
     "idealist": {
       "ok": true,
-      "found": 207
+      "found": 212
     },
     "nafsn": {
       "ok": true,
-      "found": 0
+      "found": 42
     },
     "wildteam": {
       "ok": true,

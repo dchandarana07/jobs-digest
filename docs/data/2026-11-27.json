@@ -44,7 +44,8 @@
       "jobType": "Permanent",
       "salary": "The target annual compensation for this entry-level position is $40,000 in the first year.",
       "category": "admin-leadership-policy-and-law",
-      "url": "https://www.conservationjobboard.com/job-listing-plastic-free-waters-campaign-associate-portland-oregon/5888966653"
+      "url": "https://www.conservationjobboard.com/job-listing-plastic-free-waters-campaign-associate-portland-oregon/5888966653",
+      "alsoOn": "Idealist"
     },
     {
       "source": "cjb",
@@ -105,6 +106,39 @@
     {
       "source": "idealist",
       "date": "2026-11-27",
+      "title": "Campaign Organizer",
+      "org": "Environment America",
+      "location": "Richmond, Virginia",
+      "jobType": "Full Time",
+      "salary": "USD 40000.00 - 40000.00/year",
+      "category": "Environment",
+      "url": "https://www.idealist.org/en/nonprofit-job/ff34d2d29d32466f8bfc6c3043e82963-campaign-organizer-environment-america-richmond"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
+      "title": "Clean Water Policy Advocate",
+      "org": "Environment America",
+      "location": "Boston, Massachusetts",
+      "jobType": "Full Time",
+      "salary": "USD 41750.00 - 46000.00/year",
+      "category": "Environment",
+      "url": "https://www.idealist.org/en/nonprofit-job/5540cb4333f5474ab99ec3e3b56961cf-clean-water-policy-advocate-environment-america-boston"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
+      "title": "Clean Water Policy Advocate",
+      "org": "Environment America",
+      "location": "Washington, District of Columbia",
+      "jobType": "Full Time",
+      "salary": "USD 41750.00 - 46000.00/year",
+      "category": "Environment",
+      "url": "https://www.idealist.org/en/nonprofit-job/30de28f22be24276a26a759012430bf3-clean-water-policy-advocate-environment-america-washington"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
       "title": "Director of Neighborhood & Commercial Revitalization",
       "org": "Southeast Community Development Corporation",
       "location": "Baltimore, Maryland",
@@ -123,6 +157,17 @@
       "salary": "USD 125000.00 - 145000.00/year",
       "category": "Philanthropy, Civic Engagement",
       "url": "https://www.idealist.org/en/job/26828a3f8c854ff99d9f66a35aba1e6e-director-of-strategic-communications-new-pluralists-chicago"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
+      "title": "Environment New Hampshire Conservation Advocate",
+      "org": "Environment America",
+      "location": "Concord, New Hampshire",
+      "jobType": "Full Time",
+      "salary": "USD 41750.00 - 46000.00/year",
+      "category": "Environment",
+      "url": "https://www.idealist.org/en/nonprofit-job/6b7ed7d0dd7845eea8ca4fdcf2ba238a-environment-new-hampshire-conservation-advocate-environment-america-concord"
     },
     {
       "source": "idealist",
@@ -182,6 +227,17 @@
     {
       "source": "idealist",
       "date": "2026-11-27",
+      "title": "FUNDRAISING LEAD",
+      "org": "The Warmth Initiative For Human Needs Response",
+      "location": "Remote (NG)",
+      "jobType": "Contract",
+      "salary": "USD 50.00 - 100.00/month",
+      "category": "Housing Homelessness",
+      "url": "https://www.idealist.org/en/nonprofit-job/430dc9cf4a404a5abdb454dd6f06b075-fundraising-lead-the-warmth-initiative-for-human-needs-response-lagos"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
       "title": "Operador/a Telefónico/a - Call Center Captación (Part-time)",
       "org": "Aldeas Infantiles SOS Argentina",
       "location": "Ciudad Autónoma de Buenos Aires, Ciudad Autónoma de Buenos Aires, AR",
@@ -215,6 +271,18 @@
     {
       "source": "idealist",
       "date": "2026-11-27",
+      "title": "Plastic Free Waters Campaign Associate",
+      "org": "Environment America",
+      "location": "Portland, Oregon",
+      "jobType": "Full Time",
+      "salary": "USD 40000.00 - 40000.00/year",
+      "category": "Environment",
+      "url": "https://www.idealist.org/en/nonprofit-job/f573870448cc4dab9af4e5a2819284e3-plastic-free-waters-campaign-associate-environment-america-portland",
+      "alsoOn": "Conservation Job Board"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
       "title": "Regional Organizer – Bay Area (Contract)",
       "org": "New Advocacy Organization for AI Regulation",
       "location": "San Francisco, California",
@@ -244,6 +312,17 @@
       "salary": "USD 40000.00 - 40000.00/year",
       "category": "Civic Engagement, Consumer Protection, Transparency Oversight",
       "url": "https://www.idealist.org/en/nonprofit-job/3eb969974872452eabd0d035f4b919b4-short-term-fix-it-campaigner-us-pirg-boston"
+    },
+    {
+      "source": "idealist",
+      "date": "2026-11-27",
+      "title": "Youth Employment Specialist I - Staten Island",
+      "org": "Bridges From School to Work Inc.",
+      "location": "New York, New York",
+      "jobType": "Full Time",
+      "salary": "USD 66300.00 - 68000.00/year",
+      "category": "Children Youth, Disability, Economic Development",
+      "url": "https://www.idealist.org/en/nonprofit-job/b595eab1f9e745ddb68043f9f8aee93f-youth-employment-specialist-i-staten-island-bridges-from-school-to-work-inc-new-york"
     }
   ]
 }
